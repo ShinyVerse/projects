@@ -14,18 +14,19 @@ var hotel = {
   },
 
   roomBooked: function() {
-    this.rooms--;
     this.booked++;
   }
 };
 
 buttonCheck.onclick = function() {
   alert("hello, there are: " + hotel.checkAvailability() + " rooms available.");
+
+  console.log(hotel.checkAvailability());
 }
 
 buttonBook.onclick = function() {
   alert("You have booked");
   hotel.roomBooked();
-  console.log(hotel.booked);
-  console.log(hotel.rooms);
+  console.log("Total hotel rooms booked: " + hotel.booked);
+  console.log("Rooms available: " + hotel.checkAvailability());
 }
