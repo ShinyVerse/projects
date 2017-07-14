@@ -1,0 +1,32 @@
+.catGallery {
+  border: 5px black solid;
+
+}
+
+.galleryImage {
+  display: flex;
+  flex-direction: row;
+  border: 5px red solid;
+
+}
+
+img {
+  width: 100px;
+  height: 75px;
+  max-width: 500px;
+  flex-grow: 1;
+  flex-shrink: 2;
+  border: 5px solid blue;
+}
+
+aside {
+  flex-grow: 1;
+  border: green solid 5px;
+}
+
+@media screen and (min-width: 400px) {
+  img {
+    width: 300px;
+    height: 200px;
+  }
+}

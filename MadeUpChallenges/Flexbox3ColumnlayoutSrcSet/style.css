@@ -1,0 +1,50 @@
+.mySections {
+  display: flex;
+  flex-direction: column;
+}
+/*.item {
+  flex: 1;
+  border: 1rem #47ff56 solid;
+  background-color: #99ffa1;
+}*/
+.firstColumn {
+  order:0;
+  flex-grow: 1;
+  border: 2px #47ff56 solid;
+  background-color: #99ffa1;
+  padding: 1rem;
+  flex-shrink: 1;
+}
+
+.middleColumn {
+  order: 2;
+  border: 2px solid #47edbe;
+  background-color: #a3f7df;
+  padding: 1rem;
+  flex-grow: 2;
+  flex-shrink: 1;
+}
+
+.lastColumn {
+  order: 3;
+  border: 2px solid #11b9fc;
+  background-color: #8cdeff;
+  padding: 1rem;
+  flex-grow: 1;
+  text-overflow: ellipsis;
+  flex-shrink: 1;
+}
+
+.myImageSection{
+  order:1;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: none;
+  
+}
+
+
+.item {
+  margin: 0.6em;
+}

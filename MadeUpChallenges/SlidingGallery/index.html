@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sliding Gallery</title>
+	<meta name="viewport" content="width=device-width">
+	<link href="https://fonts.googleapis.com/css?family=Tenali+Ramakrishna" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="slider">
+		<button type="button" id="leftButton" class="leftSide" onclick="changeImageLeft()"><</button>
+      <figure>
+        <div class="slide">
+          <p>slide1</p>
+          <img src="img/slide1.jpg">
+        </div>
+        <div class="slide">
+          <p>slide2</p>
+          <img src="img/slide2.jpg">
+        </div>
+        <div class="slide">
+          <p>slide3</p>
+          <img src="img/slide3.jpg">
+        </div>
+      </figure>
+			<button type="button" id="rightButton" class="rightSide" onclick="changeImageRight()">></button>
+  </div>
+
+</style>
+<script type="text/javascript">
+		function changeImageRight() {
+			var mySlide = getElementsByClassName('slider').style.animation = slideLeft;
+			alert("turn right");
+		}
+
+		function changeImageLeft() {
+			alert("turn left");
+		}
+</script>
+</body>
+</html>

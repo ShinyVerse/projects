@@ -1,0 +1,16 @@
+body {
+ background-image: url("img/fantasy2.jpg");
+ background-repeat: no-repeat;
+ background-size: cover ;
+
+}
+
+.cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20%;
+  flex-wrap: wrap;
+}
+
+.flexForm {}

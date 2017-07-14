@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sliding Gallery</title>
+	<meta name="viewport" content="width=device-width">
+	<link href="https://fonts.googleapis.com/css?family=Tenali+Ramakrishna" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img class="slide" src="img/slide1.jpg">
+    <img class="slide" src="img/slide2.jpg">
+    <img class="slide" src="img/slide3.jpg">
+    <img class="slide" src="img/slide4.jpg">
+    <img class="slide" src="img/slide5.jpg">
+    <img class="slide" src="img/slide6.jpg">
+    <img class="slide" src="img/slide7.jpg">
+
+    <div class="container">
+      <p>Select Your Dream World: </p>
+      <form>
+        <select name="world" class="worldList">
+          <option value="Lake">Lake</option>
+          <option value="SnowyMountain">Snowy Mountain</option>
+          <option value="Space">Space</option>
+          <option value="Desert">Desert</option>
+          <option value="MagicalTreeBranch">Magical Tree Branch</option>
+          <option value="FloatingMountain">Floating Mountain</option>
+          <option value="IceJungle">Ice Jungle</option>
+        </select>
+      </form>
+    </div>
+
+
+<button class="displayLeft" onclick="plusSlide(-1)">&#10094;</button>
+<button class="displayRight" onclick="plusSlide(+1)">&#10095;</button>
+
+<script type="text/javascript">
+var slideIndex = 1;  //my slideIndex starts with value 1
+mySlider(slideIndex);   //mySlider is the value of slideIndex (1)
+
+function plusSlide(n) {  //function as plusSlide (which is triggered by buttons)
+  //it is handed the argument by the onclick left (-1) or right  (+1)
+    mySlider(slideIndex += n); // the slide index + or = that argument.
+}
+
+function mySlider(n) {  //mySlider is given the sum so say slideIndex(1) += +1 basically 1+1 or 1-1
+    var i; //empty var
+    var x = document.getElementsByClassName("slide"); //x is assigned the document slide.
+    console.log("value of x.length: " + x.length);
+    console.log("value of n: " + n);
+    if (n > x.length) {slideIndex = 1} //if n (currently 1+1 (2)) = length of x (3) then slideIndex is resetted
+    if (n < 1) {slideIndex = x.length} ; //if n (currently 1+1 (2)) is less than length of x (3) then: slideIndex = the slide you have landed on's length value.
+    for (i = 0; i < x.length; i++) { // i = 0, while i is less than length then plus 1 to i.
+        x[i].style.display = "none"; // slide[index number] of the style of the display = none. Do not show any
+    }
+    x[slideIndex-1].style.display = "block"; // x = slide[with the slideIndex number ( (currently 1+1 (2)) - 1)] of the style of the display = block. So show this index item
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+body {
+   background-color: darkblue;
+ }
+
+ .box > div  {
+   width: 300px;
+   height: 200px;
+ }
+
+  .boxAnimation {
+    display: inline-block;
+    margin: 4px;
+    padding: 0;
+    background: linear-gradient(-45deg, transparent 40%, #fff 40%, #fff 50%, transparent 50%);
+    background-color: lightblue;
+    border-radius: 4px;
+    background-size: 400% 400%;
+    background-position: 80% 80%;
+    animation: beforeBoxAnimation 2s ease infinite;
+    box-shadow: 0 2px 4px #000;
+    transition: 1s;
+  }
+
+ .boxAnimation > div {
+   background-size: auto 130%;
+   background-position: center;
+   border-radius: 4px;
+ }
+
+ .boxAnimation:hover {
+   padding: 4px;
+   margin: 0;
+   box-shadow: 0 2px 4px #000, 0 8px 32px;
+ }
+   )
+
+@keyframes beforeBoxAnimation  {
+  to {
+      background-position: 30% 30%;
+  }
+}
