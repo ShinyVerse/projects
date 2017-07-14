@@ -5,7 +5,7 @@ var buttonBook = document.getElementById('book');
 
 var hotel = {
   name: "Grand Hotel",
-  rooms: 12,
+  rooms: 6,
   booked: 4,
   gym: false,
 
@@ -15,6 +15,7 @@ var hotel = {
 
   roomBooked: function() {
     this.booked++;
+
   }
 };
 
@@ -25,8 +26,13 @@ buttonCheck.onclick = function() {
 }
 
 buttonBook.onclick = function() {
-  alert("You have booked");
-  hotel.roomBooked();
-  console.log("Total hotel rooms booked: " + hotel.booked);
-  console.log("Rooms available: " + hotel.checkAvailability());
-}
+  if (hotel.booked === hotel.rooms) {
+    alert("Sorry no rooms are currently available! Try again later");
+  }
+    else {
+      alert("You have booked");
+      hotel.roomBooked();
+      console.log("Total hotel rooms booked: " + hotel.booked);
+      console.log("Rooms available: " + hotel.checkAvailability());
+      }
+    }
