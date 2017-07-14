@@ -4,7 +4,7 @@ var buttonBook = document.getElementById('book');
 
 
 var hotel = {
-  name: "Grand Corner Cabins",
+  name: "Grand Hotel",
   rooms: 12,
   booked: 4,
   gym: false,
