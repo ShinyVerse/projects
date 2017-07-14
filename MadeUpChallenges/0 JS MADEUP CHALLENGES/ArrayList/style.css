@@ -1,0 +1,36 @@
+/*font-family: 'Chewy', cursive;
+font-family: 'Luckiest Guy', cursive;*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("img/clouds.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 2rem;
+}
+
+.outerBox {
+  background-color: #0097e5;
+  height: 500px;
+  width: calc(80%);
+  text-align: center;
+  margin: auto;
+  margin-top: 2rem;
+  border: white solid 4px;
+}
+
+button {
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  color: white;
+  background-color: black;
+}
+
+p {
+  font-family: 'Chewy', cursive;
+  font-size: 3rem;
+}
