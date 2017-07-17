@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+#dogBowlSection {
+  background-image: url('img/dogBowl.jpg');
+  height: 600px;
+  width: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+h1, p {
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+  margin-bottom: 50%;
+}
+
+h1 {
+  margin-bottom: 0;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+p {
+  margin-top: 0;
+  font-family: 'Schoolbell', cursive;
+  font-size: 1.5rem;
+}
