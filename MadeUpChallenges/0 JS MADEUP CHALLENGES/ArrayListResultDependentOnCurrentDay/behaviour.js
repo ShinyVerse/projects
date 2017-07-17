@@ -21,8 +21,9 @@ function getToday() {
 adviceButton.onclick = function(){
   paragraph.textContent = myAdviceList[getToday()];
 
-  
 }
+
+//create element which tells the visitor to come back tomorrow for another one. If click has happened
 
 
 // function randomize() {
