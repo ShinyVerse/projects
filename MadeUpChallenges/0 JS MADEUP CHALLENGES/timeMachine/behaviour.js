@@ -9,6 +9,8 @@ var displayInfo = document.getElementById("displayInfo");
 
 var button = document.getElementById("timeButton");
 
+var myScreen = document.getElementById("screen1");
+
 
 function randomize(){
    return randonNum = Math.floor(Math.random() * periods.length);
@@ -22,10 +24,16 @@ function newOutPut() {
    newOutPut();
  }
 
-
-
-
-
+ // function imagePass(num) {
+ //   link = "url('img/time";
+ //   link += num;
+ //   link += ".jpg');";
+ //
+ //    var link = "\"url(\'img/time" + num + ".jpg\')\"\;";
+ //   console.log(link);
+ //   myScreen = screen1.style.backgroundImage =  link;
+ //   return myScreen;
+ // }
 
 
 function WhereAmI(randomPeriod){
@@ -33,24 +41,46 @@ function WhereAmI(randomPeriod){
  switch(randomPeriod){
   case "The Big Bang":
       WhereAmITimePeriod = "14000 Million Years Ago";
+        if (WhereAmITimePeriod === "14000 Million Years Ago") {
+          myScreen = screen1.style.backgroundImage = "url('img/time0.jpg')";
+          // imagePass(0);
+        }
       break;
   case "Jurassic":
       WhereAmITimePeriod = "250 Million Years Ago"
+      if (WhereAmITimePeriod === "250 Million Years Ago"){
+        myScreen = screen1.style.backgroundImage = "url('img/Dinosaur.jpg')";
+      }
       break;
   case "Stone Age":
       WhereAmITimePeriod = "1029 BC"
+        if (WhereAmITimePeriod === "1029 BC"){
+          myScreen = screen1.style.backgroundImage = "url('img/stoneAge.jpg')";
+        }
       break;
   case "Iron Age":
       WhereAmITimePeriod = "742 BC"
+        if (WhereAmITimePeriod === "742 BC"){
+          myScreen = screen1.style.backgroundImage = "url('img/ironAge.jpg')";
+        }
       break;
   case "Medieval Age":
       WhereAmITimePeriod = "Year 560"
+        if (WhereAmITimePeriod === "Year 560"){
+          myScreen = screen1.style.backgroundImage = "url('img/mediAge.jpg')";
+        }
       break;
   case "Industrial":
       WhereAmITimePeriod = "Year 1800"
+        if (WhereAmITimePeriod === "Year 1800"){
+          myScreen = screen1.style.backgroundImage = "url('img/industAge.jpg')";
+        }
       break;
   case "Now":
       WhereAmITimePeriod = dateNow;
+        if (WhereAmITimePeriod === dateNow){
+          myScreen = screen1.style.backgroundImage = "url('img/modLife.jpg')";
+        }
  }
  return WhereAmITimePeriod;
 }
@@ -82,5 +112,8 @@ function dateNow() {
 }
 
 timeSection.textContent = dateNow();
+  if (timeSection.textContent === dateNow) {
+    myScreen = screen1.style.backgroundImage = "url('img/modLife.jpg')"
+  }
 
 //display period
