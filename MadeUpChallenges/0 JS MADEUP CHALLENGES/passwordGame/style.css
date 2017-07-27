@@ -1,8 +1,12 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
   text-decoration: none;
-  overflow: hidden;
+  background-image: url("img/trunk.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   /*font-family: 'Anton', sans-serif;
 font-family: 'Francois One', sans-serif;
 font-family: 'Kalam', cursive;*/
@@ -11,10 +15,6 @@ font-family: 'Kalam', cursive;*/
 #puzzleContainer{
   width: 100%;
   height: 100%;
-  background-image: url("img/trunk.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .gallery{
@@ -70,21 +70,36 @@ p:hover, p:focus, p.active {
   border-radius: 10px;
 }
 
+#codeGuessButton {
+  padding: 20px;
+  padding-top: 10px;
+  text-align: center;
+  margin: auto;
+}
+
 #passwordButton:active, #passwordButton:focus {
  outline-color: #4d3319;
  transition: 1s;
 }
 
+#finalButton {
+  border: #4d3319 1px solid;
+  background-color:  #e6ccb3;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
 #guessBox {
   position: fixed;
-  width: calc(80%);
-  height: calc(80%);
+  width: calc(90%);
+  height: calc(90%);
   background-image: url("img/treeBark.jpg");
   background-size: contain;
   border:  #4d3319 2px solid;
   z-index: 60;
-  left: 10%;
-  top: 10%;
+  left: 5%;
+  top: 5%;
   transition: 0.2s;
   border-radius: 10px;
   font-family: 'Francois One', sans-serif;
@@ -92,6 +107,7 @@ p:hover, p:focus, p.active {
 
 #guessContainer {
   display: flex;
+  height: 50%;
   justify-content: space-between;
   flex-direction: column;
   text-align: center;
@@ -99,7 +115,10 @@ p:hover, p:focus, p.active {
   align-items: center;
 }
 
-
+h2 {
+  padding: 0;
+  margin-bottom: 0;
+}
 
 .hidden {
   position: fixed;
@@ -114,10 +133,36 @@ table {
   margin-bottom: 15px;
 }
 
-
 .textField {
   width: 3rem;
   height:3rem;
   font-size: 3rem;
   text-align: center;
+}
+
+#thisOne{
+  height: 100vh;
+  width: 100%;
+}
+
+@media screen and (min-width: 200px){
+  #thisOne {
+    background-image: url('img/fairylandmob.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 550px){
+  #thisOne {
+    background-image: url('img/fairylandmed.png');
+    background-size: cover;
+  }
+}
+
+
+@media screen and (min-width: 750px){
+  #thisOne {
+    background-image: url('img/fairyland.png');
+    background-size: cover;
+  }
 }
