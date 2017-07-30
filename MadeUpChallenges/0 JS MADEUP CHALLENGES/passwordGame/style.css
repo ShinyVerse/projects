@@ -52,6 +52,8 @@ p:hover, p:focus, p.active {
   transition: 1s;
 }
 
+
+
 #passwordButton {
    margin-bottom: 5%;
    margin-left: 15px;
@@ -143,6 +145,16 @@ table {
 #thisOne{
   height: 100vh;
   width: 100%;
+  z-index: 1;
+}
+
+#welcomeMsg {
+  font-family: 'Kalam', cursive;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 40%;
+  text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
 }
 
 @media screen and (min-width: 200px){
