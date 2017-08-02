@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Your Best Shot</title>
+	<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="outerContainerBox">
+
+    <div id="innerContainerBox">
+      <section id= "loveForm">
+        <h2>Let Us Be Your Cupid</h2>
+        <p>Fill in the sections as accurately as possible, or you risk losing your soul mate and walk the Earth alone forever!</p>
+          <table border="1px solid black" width="400px">
+            <tr>
+              <td>What the devil are you?<br>
+                <select name="personGender" id='selectGender'>
+                  <option value="Robot">Robot</option>
+                  <option value="God">God</option>
+                  <option value="Alpache">Alpache</option>
+                  <option value="Woman">Woman</option>
+                  <option value="Man">Man</option>
+                  <option value="Unknown">Unknown</option>
+                </select>
+              </td>
+            <tr>
+            </tr>
+            <tr>
+              <td>What is the best icecream topping?<br>
+                <form>
+                  <input type="radio" name="icecreamTopping" value="cheese" checked>Cheese<br>
+                  <input type="radio" name="icecreamTopping" value="miracles">Miracles<br>
+                  <input type="radio" name="icecreamTopping" value="rocks"> Rocks <br>
+                  <input type="radio" name="icecreamTopping" value="sprinkles"> Sprinkles <br>
+                  <input type="radio" name="icecreamTopping" value="boneShards"> Bone Shards <br>
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>Three Words To Describe Yourself<br>
+                <table>
+                  <tr>
+                    <td><input type="text" id='traitOne' name="firstTrait" pattern="regexp"><br>
+                      <input type="submit" class='generateButton' value="I'm too lazy, think for me">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><input type="text" id='traitTwo' name="secondTrait" pattern="regexp"><br>
+                      <input type="submit" class='generateButton' value="I'm too lazy, think for me">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><input type="text" id='traitThree' name="thirdTrait" pattern="regexp"><br>
+                      <input type="submit" class='generateButton' value="I'm too lazy, think for me">
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>What is your email? IF you get a match, we'll let you know. Then you decide if you date or ditch.<br>
+              <input id="emailAddress" type="email">
+              </td>
+            </tr>
+          </table>
+          <input type="submit" id="finishButton" value="Send / Wish me luck!">
+      </section>
+    </div>
+  </div>
+	<script src="jquery-3.2.1.min.js"></script>
+	<<script src="myScript.js"></script>
+</body>
+</html>
