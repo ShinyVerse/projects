@@ -1,3 +1,50 @@
 html {
-background-image: url('../img/largeBg.jpg');
+padding: 0;
+margin: 0;
+}
+/**********************Main Features**********************/
+body {
+  background-color: #fcfaf2;
+  height: 100vh;
+  width: 90%;
+}
+
+#profileImage {
+  height: 200px;
+  width:200px;
+  border-radius: 50%;
+}
+
+.svgImage {
+  height: 200px;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+}
+
+
+/**********************Containers**********************/
+
+.svgContainer {
+  border-radius: 5%;
+  border: 2px solid;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  margin: 10px 0px;
+}
+
+.orangeSvgContainer {
+  background-color: #ffd8bf;
+  border-color: #ff934c;
+}
+
+.blueSvgContainer {
+  background-color: #f2fcff;
+  border-color: #00d7ff;
+}
+
+.redSvgContainer {
+  background-color: #ffdde0;
+  border-color: #f97079;
 }

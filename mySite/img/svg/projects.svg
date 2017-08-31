@@ -94,8 +94,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497476"
-     inkscape:cx="265.92883"
-     inkscape:cy="300.80961"
+     inkscape:cx="-104.79714"
+     inkscape:cy="537.28852"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -105,7 +105,7 @@
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      showguides="false"
-     inkscape:snap-global="false"
+     inkscape:snap-global="true"
      inkscape:measure-start="0,0"
      inkscape:measure-end="0,0" />
   <metadata
@@ -125,19 +125,19 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="opacity:0.65;fill:#b5f1ff;fill-opacity:1;stroke:#00d7ff;stroke-width:2.64583325;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:0.65;fill:#b5f1ff;fill-opacity:1;stroke:#00d7ff;stroke-width:4.16465425;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4485"
-       width="139.09525"
-       height="176.1369"
-       x="37.419643"
-       y="55.095242"
-       ry="18.898809" />
+       width="207.07298"
+       height="293.13803"
+       x="1.827158"
+       y="2.0171289"
+       ry="31.452579" />
     <g
        id="g4530"
        transform="matrix(1.224037,0,0,1.1264727,-26.923652,-18.808594)" />
     <g
        id="g4559"
-       transform="translate(0,6.6817381)">
+       transform="matrix(1.7362182,0,0,1.4792454,-79.446928,-54.130818)">
       <rect
          rx="3.0238094"
          ry="18.898815"
