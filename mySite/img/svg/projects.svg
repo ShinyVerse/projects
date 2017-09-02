@@ -11,9 +11,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="200mm"
+   height="200mm"
+   viewBox="0 0 200 200"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.1 r15371"
@@ -22,10 +22,10 @@
      id="defs2">
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="-2.4062792 : 180.97701 : 1"
-       inkscape:vp_y="-491.8017 : -285.17571 : 0"
-       inkscape:vp_z="-29.829392 : 228.26972 : 1"
-       inkscape:persp3d-origin="8.2263503 : 218.73957 : 1"
+       inkscape:vp_x="-2.4062792 : 180.977 : 1"
+       inkscape:vp_y="-491.80171 : -285.1757 : 0"
+       inkscape:vp_z="-29.829392 : 228.26971 : 1"
+       inkscape:persp3d-origin="8.2263504 : 218.73956 : 1"
        id="perspective4599" />
     <linearGradient
        id="linearGradient5990"
@@ -93,9 +93,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497476"
-     inkscape:cx="-104.79714"
-     inkscape:cy="537.28852"
+     inkscape:zoom="0.70000002"
+     inkscape:cx="165.34236"
+     inkscape:cy="303.65953"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -107,7 +107,8 @@
      showguides="false"
      inkscape:snap-global="true"
      inkscape:measure-start="0,0"
-     inkscape:measure-end="0,0" />
+     inkscape:measure-end="0,0"
+     units="mm" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -116,28 +117,29 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(0,-97.000006)">
     <rect
-       style="opacity:0.65;fill:#b5f1ff;fill-opacity:1;stroke:#00d7ff;stroke-width:4.16465425;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:0.65;fill:#b5f1ff;fill-opacity:1;stroke:#00d7ff;stroke-width:3.31810737;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4485"
-       width="207.07298"
-       height="293.13803"
-       x="1.827158"
-       y="2.0171289"
-       ry="31.452579" />
+       width="195.8924"
+       height="196.69847"
+       x="2.2056828"
+       y="98.879959"
+       ry="21.104986" />
     <g
        id="g4530"
        transform="matrix(1.224037,0,0,1.1264727,-26.923652,-18.808594)" />
     <g
        id="g4559"
-       transform="matrix(1.7362182,0,0,1.4792454,-79.446928,-54.130818)">
+       transform="matrix(1.2268035,0,0,1.0452278,-31.968513,55.538256)">
       <rect
          rx="3.0238094"
          ry="18.898815"

@@ -1,26 +1,41 @@
+
+*{
+    text-decoration: none;
+    color: black;
+}
+
 html {
 padding: 0;
-margin: 0;
+margin: auto;
 }
+
 /**********************Main Features**********************/
 body {
-  background-color: #fcfaf2;
+  background-color: #f9feff;
   height: 100vh;
   width: 90%;
+  margin: auto;
+  text-align: center;
 }
 
-#profileImage {
-  height: 200px;
-  width:200px;
-  border-radius: 50%;
+nav a {
+  margin: 1px;
 }
 
-.svgImage {
-  height: 200px;
-  width: 150px;
-  margin: 0;
-  padding: 0;
+.myNav {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }
+
+.navItem {
+  background-color: #cee8ed;
+  color: black;
+  padding: 5px;
+  font-size: 1.2em;
+}
+
+
 
 
 /**********************Containers**********************/
@@ -31,20 +46,53 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
+  flex-direction: column;
   margin: 10px 0px;
 }
 
 .orangeSvgContainer {
-  background-color: #ffd8bf;
-  border-color: #ff934c;
+  background-color:#fffded;
+  border-color: #fcf6c7;
 }
 
 .blueSvgContainer {
-  background-color: #f2fcff;
-  border-color: #00d7ff;
+  background-color: #eff5f7;
+  border-color: #baf3ff;
 }
 
-.redSvgContainer {
-  background-color: #ffdde0;
-  border-color: #f97079;
+.greenSvgContainer {
+  background-color: #e8ffea;
+  border-color: #bfffc4;
+}
+
+.aboutContainer{
+  display: flex;
+}
+
+/**********************Images**********************/
+
+#profileImage {
+  height: 200px;
+  width:200px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.svgImage {
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  padding: 0;
+}
+
+/**********************Media Queries**********************/
+
+@media screen and (min-width: 480px) {
+  .myNav {
+    flex-direction: row;
+  }
+  .navItem {
+    flex-grow: 3;
+
+  }
 }
