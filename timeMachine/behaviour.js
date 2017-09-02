@@ -28,8 +28,10 @@ function newOutPut() {
  //   link = "url('img/time";
  //   link += num;
  //   link += ".jpg');";
+ //
+ //    var link = "\"url(\'img/time" + num + ".jpg\')\"\;";
  //   console.log(link);
- //   myScreen = screen1.style.backgroundImage = '\\"' + link + '\\";';
+ //   myScreen = screen1.style.backgroundImage =  link;
  //   return myScreen;
  // }
 
@@ -41,6 +43,7 @@ function WhereAmI(randomPeriod){
       WhereAmITimePeriod = "14000 Million Years Ago";
         if (WhereAmITimePeriod === "14000 Million Years Ago") {
           myScreen = screen1.style.backgroundImage = "url('img/time0.jpg')";
+          // imagePass(0);
         }
       break;
   case "Jurassic":
