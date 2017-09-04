@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="10"
+   height="10"
+   viewBox="0 0 2.6458333 2.6458333"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="back.svg">
+  <defs
+     id="defs2">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4514">
+      <path
+         style="fill:#545454;fill-opacity:1;stroke:#000000;stroke-width:0.14484632;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -127.51422,241.04122 -27.56185,26.43337 0.005,-26.45597 z"
+         id="path4516"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccc" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4537">
+      <rect
+         style="opacity:1;fill:#545454;fill-opacity:1;stroke:#effff1;stroke-width:0.24672624;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.97745098;paint-order:stroke fill markers"
+         id="rect4539"
+         width="20.453085"
+         height="43.903465"
+         x="58.716679"
+         y="258.37946"
+         ry="0"
+         transform="rotate(45)" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4543">
+      <rect
+         style="opacity:1;fill:#effff1;fill-opacity:1;stroke:#effff1;stroke-width:0.21976073;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.97745098;paint-order:stroke fill markers"
+         id="rect4545"
+         width="19.338427"
+         height="44.127956"
+         x="68.51371"
+         y="255.37445"
+         transform="rotate(46.937636)" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4549">
+      <rect
+         style="opacity:1;fill:#effff1;fill-opacity:1;stroke:#effff1;stroke-width:0.08530589;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.97745098;paint-order:stroke fill markers"
+         id="rect4551"
+         width="12.415628"
+         height="43.755928"
+         x="60.417721"
+         y="261.59311"
+         transform="rotate(45.11521)" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="31.678384"
+     inkscape:cx="-2.5029648"
+     inkscape:cy="2.0474533"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g4500"
+     showgrid="false"
+     inkscape:window-width="1536"
+     inkscape:window-height="801"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     units="px"
+     inkscape:snap-global="false" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-294.35416)">
+    <g
+       id="g4500"
+       transform="matrix(0.05142181,0,0,0.05286503,0.03432171,281.31471)">
+      <circle
+         r="24.071148"
+         cx="25.123337"
+         cy="272.14392"
+         id="path4485"
+         style="opacity:1;fill:#afafaf;fill-opacity:1;stroke:#effff1;stroke-width:1.96621799;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+      <rect
+         style="opacity:1;fill:#afafaf;fill-opacity:1;stroke:#effff1;stroke-width:5.52481508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.97745098;paint-order:stroke fill markers"
+         id="rect4498"
+         width="22.092474"
+         height="21.072821"
+         x="-152.27905"
+         y="243.69014"
+         ry="0"
+         rx="0"
+         transform="matrix(1.2666447,-0.98770727,1.2717488,0.9837431,-98.155316,-118.5985)"
+         clip-path="url(#clipPath4549)" />
+    </g>
+  </g>
+</svg>

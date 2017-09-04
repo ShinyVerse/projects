@@ -1,7 +1,11 @@
+/*font-family: 'Cuprum', sans-serif;
+font-family: 'Vollkorn', serif;*/
+
 
 *{
     text-decoration: none;
     color: black;
+    font-family: 'Cuprum', sans-serif;
 }
 
 html {
@@ -35,6 +39,26 @@ nav a {
   font-size: 1.2em;
 }
 
+.first {
+  display: inline-block;
+  background-image: url(../img/svg/home.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  z-index: 1000;
+}
+
+#timeMachineButton {
+  display: inline-block;
+  background-image: url(../img/svg/home.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+}
 
 
 
