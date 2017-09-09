@@ -22,6 +22,8 @@ body {
   text-align: center;
 }
 
+/**********************Navigation**********************/
+
 nav a {
   margin: 1px;
 }
@@ -50,6 +52,8 @@ nav a {
   z-index: 1000;
 }
 
+/**********************Project Buttons**********************/
+
 #timeMachineButton {
   display: inline-block;
   background-image: url(../img/svg/timeMachine.svg);
@@ -63,7 +67,18 @@ nav a {
 
 #passwordGameButton {
   display: inline-block;
-  background-image: url(../img/svg/passWord.svg);
+  background-image: url(../img/svg/passWord2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  margin-top: 5px;
+}
+
+#responsiveGalleryButton {
+  display: inline-block;
+  background-image: url(../img/svg/galleryHover.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
