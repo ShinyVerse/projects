@@ -106,12 +106,13 @@
     <g
        id="g4500"
        transform="matrix(0.05142181,0,0,0.05286503,0.03432171,281.31471)">
-      <circle
-         r="24.071148"
+      <ellipse
          cx="25.123337"
-         cy="272.14392"
+         cy="271.90692"
          id="path4485"
-         style="opacity:1;fill:#afafaf;fill-opacity:1;stroke:#effff1;stroke-width:1.96621799;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+         style="opacity:1;fill:#afafaf;fill-opacity:1;stroke:#effff1;stroke-width:1.95690107;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         rx="24.075874"
+         ry="23.838886" />
       <rect
          style="opacity:1;fill:#afafaf;fill-opacity:1;stroke:#effff1;stroke-width:5.52481508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.97745098;paint-order:stroke fill markers"
          id="rect4498"
@@ -121,7 +122,7 @@
          y="243.69014"
          ry="0"
          rx="0"
-         transform="matrix(1.2666447,-0.98770727,1.2717488,0.9837431,-98.155316,-118.5985)"
+         transform="matrix(0.95873084,-0.74760145,0.96259416,0.74460095,-68.649585,-23.788151)"
          clip-path="url(#clipPath4549)" />
     </g>
   </g>

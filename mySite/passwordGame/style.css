@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  text-decoration: none;
+  background-image: url("img/trunk.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /*font-family: 'Anton', sans-serif;
+font-family: 'Francois One', sans-serif;
+font-family: 'Kalam', cursive;*/
+}
+
+#puzzleContainer{
+  width: 100%;
+  height: 100%;
+}
+
+.gallery{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ div .cell{
+  width: 200px;
+  height: 200px;
+  background-image: url("img/treeOpac.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+p {
+  position: relative;
+  width: 110px;
+  height: 90px;
+  text-align: center;
+  left: calc(27%);
+  top: calc(12%);
+  font-weight: bold;
+  color: black;
+  font-size: 1.2rem;
+  line-height: 1.1;
+  font-family: 'Kalam', cursive;
+  opacity: 0;
+}
+
+p:hover, p:focus, p.active {
+  opacity: 1;
+  transition: 1s;
+}
+
+
+
+#passwordButton {
+   margin-bottom: 5%;
+   margin-left: 15px;
+   width: 150px;
+   border: #4d3319 1px solid;
+   background-color:  #e6ccb3;
+   padding: 7px;
+   border-radius: 10px;
+}
+
+#returnButton ,
+#codeGuessButton {
+  border: #4d3319 1px solid;
+  background-color:  #e6ccb3;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+#codeGuessButton {
+  padding: 20px;
+  padding-top: 10px;
+  text-align: center;
+  margin: auto;
+}
+
+#passwordButton:active, #passwordButton:focus {
+ outline-color: #4d3319;
+ transition: 1s;
+}
+
+#finalButton {
+  border: #4d3319 1px solid;
+  background-color:  #e6ccb3;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+#guessBox {
+  position: fixed;
+  width: calc(90%);
+  height: calc(90%);
+  background-image: url("img/treeBark.jpg");
+  background-size: contain;
+  border:  #4d3319 2px solid;
+  z-index: 60;
+  left: 5%;
+  top: 5%;
+  transition: 0.2s;
+  border-radius: 10px;
+  font-family: 'Francois One', sans-serif;
+}
+
+#guessContainer {
+  display: flex;
+  height: 50%;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  color:  #ffecdb;
+  align-items: center;
+}
+
+h2 {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.hidden {
+  position: fixed;
+  bottom:100%;
+}
+
+table {
+  width: 60%;
+  height:20%;
+  align-self: center;
+  border: #e6ccb3;
+  margin-bottom: 15px;
+}
+
+.textField {
+  width: 3rem;
+  height:3rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+#thisOne{
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+
+#welcomeMsg {
+  font-family: 'Kalam', cursive;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 40%;
+  text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+@media screen and (min-width: 200px){
+  #thisOne {
+    background-image: url('img/fairylandmob.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 550px){
+  #thisOne {
+    background-image: url('img/fairylandmed.png');
+    background-size: cover;
+  }
+}
+
+
+@media screen and (min-width: 750px){
+  #thisOne {
+    background-image: url('img/fairyland.png');
+    background-size: cover;
+  }
+}

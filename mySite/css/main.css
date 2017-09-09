@@ -52,12 +52,24 @@ nav a {
 
 #timeMachineButton {
   display: inline-block;
-  background-image: url(../img/svg/home.svg);
+  background-image: url(../img/svg/timeMachine.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 200px;
   width: 200px;
+  margin-top: 5px;
+}
+
+#passwordGameButton {
+  display: inline-block;
+  background-image: url(../img/svg/passWord.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  margin-top: 5px;
 }
 
 
