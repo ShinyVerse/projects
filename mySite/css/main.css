@@ -118,6 +118,7 @@ nav a {
 
 .aboutContainer{
   display: flex;
+  flex-direction: column;
 }
 
 /**********************Images**********************/
@@ -144,5 +145,14 @@ nav a {
   }
   .navItem {
     flex-grow: 3;
+  }
+}
+
+@media screen and (min-width: 600px){
+  .projectsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
