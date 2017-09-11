@@ -1,3 +1,19 @@
 svg .myBoat {
   fill: green;
 }
+
+#rowBoatImage {
+  display: none;
+}
+
+#sailBoatImage {
+  display: none;
+}
+
+#shipBoatImage {
+  display: none;
+}
+
+#boatImageSection {
+  display: inline-block;
+}

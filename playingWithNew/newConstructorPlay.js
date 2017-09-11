@@ -1,41 +1,42 @@
-var div = document.getElementById('div');
+let boatImageSection = document.getElementById('boatImageSection');
 
-function Boat(color, size, type, sinkable) {
-  this.color = color;
-  this.size = size;
-  this.type = type;
-  this.sinkable = sinkable;
-}
-
-var boat = new Boat("blue", "big", "row boat", true);
-var myBoat = new Boat("rainbow", "small", "ship", false);
+// When showMe button is pressed a function is called
+$("#showMeButton").on("click", function (e){
+  e.preventDefault();
+//when function is called it will check all the inputs currently on page
+  let boatName = $("#boatName").val();
+  let boatType = $("#selectType").val();
+  let boatColor = $("#myBoatColor").val();
 
 
-jQuery('img.svg').each(function(){
-            var $img = jQuery(this);
-            var imgID = $img.attr('id');
-            var imgClass = $img.attr('class');
-            var imgURL = $img.attr('src');
 
-            jQuery.get(imgURL, function(data) {
-                // Get the SVG tag, ignore the rest
-                var $svg = jQuery(data).find('svg');
 
-                // Add replaced image's ID to the new SVG
-                if(typeof imgID !== 'undefined') {
-                    $svg = $svg.attr('id', imgID);
-                }
-                // Add replaced image's classes to the new SVG
-                if(typeof imgClass !== 'undefined') {
-                    $svg = $svg.attr('class', imgClass+' replaced-svg');
-                }
+//create new boat which the selections will go into.
+  function Boat(name, type, color) {
+    this.name = name,
+    this.type = type,
+    this.color = color,
+    this.displayWhat = function(){
+      switch(this.type) {
+      case "Rowboat":
+        $("#boatImageSection").attr("display", "collapse");
+        $("rowBoatImage").attr("display", "inline-block");
+          break;
+      case "Ship":
+        $("#boatImageSection").attr("display", "collapse");
+        $("rowBoatImage").attr("display", "inline-block");
+          break;
+      case "Sailboat":
+        $("#boatImageSection").attr("display", "collapse");
+        $("#rowBoatImage").attr("display", "inline-block");
+          break;
+      default:
+        $("#boatImageSection").attr("display", "inline-block");
+      }
+    }
+  }
 
-                // Remove any invalid XML tags as per http://validator.w3.org
-                $svg = $svg.removeAttr('xmlns:a');
 
-                // Replace image with new SVG
-                $img.replaceWith($svg);
+  var myBoat = new Boat(boatName, boatType, boatColor);
 
-            }, 'xml');
-
-        });
+});
