@@ -1,19 +1,41 @@
 svg .myBoat {
   fill: green;
 }
+html{
+  text-align: center;
+}
 
-#rowBoatImage {
-  display: none;
+#myForm{
+  position: relative;
+}
+
+
+#boatImageSection {
+  position: absolute;
+  top: calc(50%);
+  left: calc(18%);
+  background-color: white;
+}
+
+#rowBoatImage,
+#sailBoatImage,
+#shipBoatImage {
+  position: absolute;
+  top: calc(50%);
+  left: calc(18%);
+}
+
+#rowBoatImage{
+    z-index: -10;
+    background-color: white;
 }
 
 #sailBoatImage {
-  display: none;
+  z-index: -10;
+  background-color: white;
 }
 
-#shipBoatImage {
-  display: none;
-}
-
-#boatImageSection {
-  display: inline-block;
+#shipBoatImage{
+  z-index: -10;
+  background-color: white;
 }

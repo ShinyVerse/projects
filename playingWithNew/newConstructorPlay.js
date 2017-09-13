@@ -1,5 +1,9 @@
 let boatImageSection = document.getElementById('boatImageSection');
 
+var $rowBoat = $('#rowBoatImage');
+var $sailBoat = $('#sailBoatImage');
+var $shipBoat = $('#shipBoatImage');
+
 // When showMe button is pressed a function is called
 $("#showMeButton").on("click", function (e){
   e.preventDefault();
@@ -15,28 +19,30 @@ $("#showMeButton").on("click", function (e){
   function Boat(name, type, color) {
     this.name = name,
     this.type = type,
-    this.color = color,
-    this.displayWhat = function(){
-      switch(this.type) {
-      case "Rowboat":
-        $("#boatImageSection").attr("display", "collapse");
-        $("rowBoatImage").attr("display", "inline-block");
-          break;
-      case "Ship":
-        $("#boatImageSection").attr("display", "collapse");
-        $("rowBoatImage").attr("display", "inline-block");
-          break;
-      case "Sailboat":
-        $("#boatImageSection").attr("display", "collapse");
-        $("#rowBoatImage").attr("display", "inline-block");
-          break;
-      default:
-        $("#boatImageSection").attr("display", "inline-block");
-      }
-    }
+    this.color = color
   }
 
 
   var myBoat = new Boat(boatName, boatType, boatColor);
+  if (boatType === "rowBoat"){
+    $rowBoat.css('display', 'inline-block');
+  }
+
+  // function whichBoat(boatType){
+  //   switch(boatType) {
+  //   case "Rowboat":
+  //       $rowBoat.css('display', 'inline-block');
+  //       break;
+  //   case "Ship":
+  //       $shipBoat.css('display', 'inline-block');
+  //       break;
+  //   case "Sailboat":
+  //       $sailBoat.css('display', 'inline-block');
+  //       break;
+  //   default:
+
+    }
+  }
+  console.log(myBoat);
 
 });
