@@ -17,31 +17,35 @@ function showThatBoat(){
   let boatType = $("#selectType").val();
   let boatColor = $("#myBoatColor").val();
 
-  validate();
 
-  switch(boatType) {
-    case "Rowboat":
-                  $mysteryBoat.css('z-index', '-20');
-                  $rowBoat.css('z-index', '10');
-                  $UserBoatColor.css('fill', boatColor)
-                  $(".innerContainerBox").append("<h2></h2>", boatName);
+  if (validate()){
+    switch(boatType) {
+      case "Rowboat":
+                    $mysteryBoat.css('z-index', '-20');
+                    $rowBoat.css('z-index', '10');
+                    $UserBoatColor.css('fill', boatColor)
+                    $(".innerContainerBox").append("<h2></h2>", boatName);
 
-        break;
-    case "Ship":
-                  $mysteryBoat.css('z-index', '-20');
-                  $shipBoatImage.css('z-index', '10');
-                  $UserBoatColor.css('fill', boatColor)
-                  $(".innerContainerBox").append("<h2></h2>", boatName);
-        break;
-    case "Sailboat":
-                  $mysteryBoat.css('z-index', '-20');
-                  $sailBoatImage.css('z-index', '10');
-                  $UserBoatColor.css('fill', boatColor)
-                  $(".innerContainerBox").append("<h2></h2>", boatName);
-        break;
-    default:
-        $mysteryBoat.css('z-index', '20');
-}
+          break;
+      case "Ship":
+                    $mysteryBoat.css('z-index', '-20');
+                    $shipBoatImage.css('z-index', '10');
+                    $UserBoatColor.css('fill', boatColor)
+                    $(".innerContainerBox").append("<h2></h2>", boatName);
+          break;
+      case "Sailboat":
+                    $mysteryBoat.css('z-index', '-20');
+                    $sailBoatImage.css('z-index', '10');
+                    $UserBoatColor.css('fill', boatColor)
+                    $(".innerContainerBox").append("<h2></h2>", boatName);
+          break;
+      default:
+          $mysteryBoat.css('z-index', '20');
+  }
+  }
+
+
+
 
 function validate() {
     if (boatName == "") {
