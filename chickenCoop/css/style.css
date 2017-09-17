@@ -1,0 +1,42 @@
+body {
+  text-decoration: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+#outerContainer{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 251, 176);
+}
+
+#innerContainer {
+  margin: auto;
+  width: 90%;
+  height: 80%;
+  background-color: rgb(164, 130, 84);
+}
+
+#chickenShow {
+  margin:auto;
+  width: calc(70%);
+  height: 400px;
+  background-color:rgb(157, 218, 138);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px
+}
+
+.availableChicken{
+  height: 100px;
+  width:100px;
+  background: url("../img/chicken.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 100;
+
+
+}

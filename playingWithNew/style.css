@@ -9,6 +9,9 @@ html{
   position: relative;
 }
 
+.noSetSail {
+  color: red;
+}
 
 #boatImageSection {
   position: absolute;
