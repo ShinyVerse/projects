@@ -14,17 +14,43 @@ var dataLength = myData.chickens.length;
 
 
 //1.0 take the length of chickens
-
-function addDiv(number){
     //1.1 inserts as many availableChicken divs to the dom depending on the length
-  var chickenDivs = "<div class='availableChicken'></div>".repeat(number);
-  $("#chickenShow").append(chickenDivs);
-  //2.0 loop through the chickens and add to each availableChicken div
+  var $chickenDivs = "<div class='availableChicken'></div>".repeat(dataLength);
+  $("#chickenShow").append($chickenDivs);
+  //2.0 loop through the chickens and add to each availableChicken di
+
+
+
+
+
+function displayInformation(){
   $('.availableChicken').each(function(index){
     $(this).append("Name: " + myData.chickens[index].name + "</br>");
     $(this).append("age: " + myData.chickens[index].age + "</br>");
     $(this).append("Price £" + myData.chickens[index].price + "</br>");
   });
-};
+}
 
-addDiv(dataLength);
+$(".availableChicken").on("click", function(){
+  var listItem = $(this);
+  var index =  $( "div .availableChicken" ).index( listItem );
+  $(this).append("Name: " + myData.chickens[index].name + "</br>");
+  $(this).append("age: " + myData.chickens[index].age + "</br>");
+  $(this).append("Price £" + myData.chickens[index].price + "</br>");
+});
+
+
+
+
+
+
+//3 create an overlay
+var $overlay = $('<span class="overlay"></span>');
+
+//add overlay
+
+  //3.1 hide overlay
+
+  // 3.2 When chicken hovered over overlay appears
+
+  //3.3 When not hovered over it disappears

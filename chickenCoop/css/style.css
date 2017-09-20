@@ -37,6 +37,16 @@ body {
   background-position: center;
   background-size: contain;
   z-index: 100;
+}
 
-
+.overlay {
+  background:rgb(45, 26, 235);
+  width:100px;
+  height:100px;
+  position:absolute;
+  top:0;
+  left:0;
+  display:none;
+  text-align:center;
+  z-index: 200;
 }
