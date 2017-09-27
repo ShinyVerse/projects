@@ -1,0 +1,77 @@
+/************* General *************/
+html {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+*{
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 1em;
+  text-align: center;
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 1.2em;
+}
+body {
+  background-image: url("img/purple.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/************* Word Selection Div *************/
+
+#mainContainer{
+  width: 80vw;
+  height: auto;
+  padding: auto;
+  background-color:rgba(197, 147, 208, 0.6);
+  margin: auto;
+  border: 2px black solid;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-shrink: 1;
+  flex-grow: 1;
+  align-content: space-around;
+  overflow: hidden;
+}
+
+li {
+  padding: 2px 7px;
+  margin: 15px 5px;
+}
+
+.important{
+  background: black;
+  color: white;
+  border-radius: 20px;
+}
+
+
+@media screen and (min-width:400px){
+  #mainContainer {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width:700px){
+  h1{
+    font-size: 2em;
+  }
+  li {
+    padding: 2px 15px;
+    margin: 15px 5px;
+  }
+}
+
+@media screen and (min-width:900px){
+  h1{
+    font-size: 3em;
+    padding-bottom: 40px;
+  }
+}
