@@ -1,0 +1,17 @@
+html {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+#casing {
+  height: 400px;
+  width: 300px;
+  background-color: white;
+  border: grey 4px dotted;
+}
+
+.image {
+  padding-top: 100px;
+  text-align: center;
+}

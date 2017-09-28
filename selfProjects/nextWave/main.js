@@ -1,0 +1,1 @@
+$(".image").hide().show("slow");
