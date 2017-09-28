@@ -1,5 +1,6 @@
 body{
   background-image: url("img/sand.jpg");
+  font-family: 'Cabin', sans-serif;
 }
 
 svg .myBoat {
@@ -8,10 +9,16 @@ svg .myBoat {
 html{
   text-align: center;
 }
+
+.nameBox {
+  background-color: black;
+  color: white;
+
+}
 /********************* Form section *********************/
 #formSection{
   margin: auto;
-  background-color:rgba(255, 210, 125, 0.66);
+  background-color:rgba(255, 210, 125, 0.75);
   border: 2px solid white;
   max-width: calc(80%);
   padding: 20px;
@@ -44,7 +51,7 @@ html{
 
 #boatImageSection {
   position: absolute;
-  top: calc(60%);
+  top: calc(65%);
   left: calc(19%);
   background-image: url("img/sand.jpg");
 r
@@ -54,7 +61,7 @@ r
 #sailBoatImage,
 #shipBoatImage {
   position: absolute;
-  top: calc(60%);
+  top: calc(65%);
   left: calc(19%);
 }
 
@@ -84,7 +91,7 @@ background-image: url("img/sand.jpg");
   #boatImageSection {
     position: absolute;
     top: calc(55%);
-    left: calc(24%);
+    left: calc(24.5%);
     background-color: white;
   }
 
@@ -93,14 +100,14 @@ background-image: url("img/sand.jpg");
   #shipBoatImage {
     position: absolute;
     top: calc(55%);
-    left: calc(24%);
+    left: calc(24.5%);
   }
 }
 
 @media screen and (min-width: 421px) and (max-width: 500px){
   #boatImageSection {
     position: absolute;
-    top: calc(65%);
+    top: calc(60%);
     left: calc(28%);
     background-color: white;
   }
@@ -109,7 +116,7 @@ background-image: url("img/sand.jpg");
   #sailBoatImage,
   #shipBoatImage {
     position: absolute;
-    top: calc(65%);
+    top: calc(60%);
     left: calc(28%);
   }
 }
@@ -135,5 +142,66 @@ background-image: url("img/sand.jpg");
     top: calc(24%);
     left: calc(2%);
     border-radius: 40%;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1000px){
+  #boatImageSection {
+    position: absolute;
+    top: calc(35%);
+    left: calc(60%);
+    background-color: white;
+  }
+
+  #rowBoatImage,
+  #sailBoatImage,
+  #shipBoatImage {
+    position: absolute;
+    top: calc(35%);
+    left: calc(60%);
+  }
+
+  #formSection{
+    position: absolute;
+    top: calc(39%);
+    left: calc(5%);
+    border-radius: 40%;
+  }
+
+  h1{
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1001px){
+  #boatImageSection {
+    position: absolute;
+    top: calc(35%);
+    left: calc(60%);
+    background-color: white;
+  }
+
+  #rowBoatImage,
+  #sailBoatImage,
+  #shipBoatImage {
+    position: absolute;
+    top: calc(35%);
+    left: calc(60%);
+  }
+
+  #formSection{
+    position: absolute;
+    top: calc(39%);
+    left: calc(15%);
+    border-radius: 40%;
+  }
+
+  h1{
+    font-size: 3.2rem;
+  }
+
+  .nameBox{
+    width: 75%;
+    margin: auto;
   }
 }
