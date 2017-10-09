@@ -37,16 +37,25 @@ body {
   background-position: center;
   background-size: contain;
   z-index: 100;
+  margin: 3px;
+  padding: 10px;
 }
 
-.overlay {
-  background:rgb(45, 26, 235);
-  width:100px;
-  height:100px;
-  position:absolute;
-  top:0;
-  left:0;
-  display:none;
-  text-align:center;
-  z-index: 200;
+ .dropDown {
+  background: black;
+  color: white;
+  border-radius: 10px;
+  margin: 3px;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  z-index: 100;
+  transition: 0.5s;
+
+}
+
+@keyframes smoothDown {
+    0%   {top: 0;}
+    100%  {top: 100;}
 }
