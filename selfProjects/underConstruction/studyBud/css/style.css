@@ -1,0 +1,171 @@
+/*
+
+font-family: 'Acme', sans-serif;
+*/
+
+/***********************General********************************/
+html {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: 'Acme', sans-serif;
+  background-color: rgb(231, 255, 249)
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/**************************Header*****************************/
+
+#headerSection {
+   height: 100px ;
+
+   display:table;
+   width:100%;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+  background: black;
+}
+
+#headerSection h1 {
+  display: table-cell;
+  vertical-align:middle;
+}
+
+/**************************Nav bar*****************************/
+
+ul {
+  width: 90vw;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+}
+
+#navBar li {
+    margin-left: 10px;
+    padding: 2px;
+}
+
+
+/***********************MainBody********************************/
+
+#mainBody {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.decDiv {
+  height: 150px;
+  width: calc(50%);
+  background: green;
+}
+
+ div #decDiv1 {
+  /*background: rgb(51, 93, 218);*/
+  background: url("../img/studybud4.jpg");
+  opacity: 0.85;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+ div #decDiv2 {
+  /*background: rgb(78, 190, 26);*/
+  background: url("../img/studybud2.jpg");
+  opacity: 0.75;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+div #decDiv3 {
+  /*background: rgb(157, 27, 237);*/
+  background: url("../img/studybud1.jpg");
+  opacity: 0.85;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+#section1, #section2, #section3 {
+  height: 150px;
+  width:  calc(50%);
+
+}
+
+#section1 {
+  background:rgb(217, 175, 255);
+  padding: 0;
+  margin: 0;
+  -moz-box-shadow:    inset 0 0 15px #b065f4;
+   -webkit-box-shadow: inset 0 0 15px #b065f4;
+   box-shadow:         inset 0 0 15px #b065f4;
+}
+
+#section2 {
+  background:rgb(193, 175, 255);
+  -moz-box-shadow:    inset 0 0 15px #6f48fb;
+   -webkit-box-shadow: inset 0 0 15px #6f48fb;
+   box-shadow:         inset 0 0 15px #6f48fb;
+}
+
+#section3 {
+  background:rgb(255, 170, 249);
+  -moz-box-shadow:    inset 0 0 15px #ff53f3;
+   -webkit-box-shadow: inset 0 0 15px #ff53f3;
+   box-shadow:         inset 0 0 15px #ff53f3;
+}
+
+#mainBody {
+  text-align: left;
+  color: rgb(40, 40, 40);
+}
+
+#mainBody h2 {
+  font-size: 1.1em;
+  margin-bottom: -3px;
+  text-align: center;
+  color: black;
+}
+
+#mainBody p {
+  font-size: 0.9em;
+  padding-left: 2px;
+}
+
+
+footer {
+  position: sticky;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.
