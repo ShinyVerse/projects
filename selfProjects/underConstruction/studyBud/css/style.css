@@ -9,12 +9,12 @@ html {
   margin: 0;
   text-decoration: none;
   font-family: 'Acme', sans-serif;
-  background-color: rgb(231, 255, 249)
+  background-color: rgb(231, 255, 249);
 }
 
 body {
   padding: 0;
-  margin: 0;
+  margin: auto;
 }
 
 /**************************Header*****************************/
@@ -29,7 +29,7 @@ body {
 #logo {
   width: 100px;
   height: 100px;
-  background: black;
+  background: url("../img/logo.svg");
 }
 
 #headerSection h1 {
@@ -40,11 +40,19 @@ body {
 /**************************Nav bar*****************************/
 
 ul {
-  width: 90vw;
+  max-width: 90vw;
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content:flex-start;
+  border: black solid 1px;
+  padding-top: 5px;
+  padding-bottom:5px;
+}
+
+ul a {
+  text-decoration: none;
+  color: black;
 }
 
 #navBar li {
@@ -102,38 +110,45 @@ div #decDiv3 {
   padding: 0;
   margin: 0;
 }
-#section1, #section2, #section3 {
+.section {
   height: 150px;
   width:  calc(50%);
-
 }
 
 #section1 {
-  background:rgb(217, 175, 255);
+  background:#0cff82;
   padding: 0;
   margin: 0;
-  -moz-box-shadow:    inset 0 0 15px #b065f4;
-   -webkit-box-shadow: inset 0 0 15px #b065f4;
-   box-shadow:         inset 0 0 15px #b065f4;
+  -moz-box-shadow:    inset 0 0 15px #00801a;
+   -webkit-box-shadow: inset 0 0 15px #00801a;
+   box-shadow:         inset 0 0 15px #00801a;
 }
 
 #section2 {
-  background:rgb(193, 175, 255);
-  -moz-box-shadow:    inset 0 0 15px #6f48fb;
-   -webkit-box-shadow: inset 0 0 15px #6f48fb;
-   box-shadow:         inset 0 0 15px #6f48fb;
+  background:#00d82c;
+  -moz-box-shadow:    inset 0 0 15px #00801a;
+   -webkit-box-shadow: inset 0 0 15px #00801a;
+   box-shadow:         inset 0 0 15px #00801a;
 }
 
 #section3 {
-  background:rgb(255, 170, 249);
-  -moz-box-shadow:    inset 0 0 15px #ff53f3;
-   -webkit-box-shadow: inset 0 0 15px #ff53f3;
-   box-shadow:         inset 0 0 15px #ff53f3;
+  background:#0cff82;
+  -moz-box-shadow:    inset 0 0 15px #00801a;
+   -webkit-box-shadow: inset 0 0 15px #00801a;
+   box-shadow:         inset 0 0 15px #00801a;
+}
+
+.section a {
+  text-decoration: none;
+  color: #025313;
+  border-bottom: solid 1.5px #025313;
+  font-weight: bold;
 }
 
 #mainBody {
   text-align: left;
   color: rgb(40, 40, 40);
+
 }
 
 #mainBody h2 {
@@ -152,12 +167,21 @@ div #decDiv3 {
 footer {
   position: sticky;
   text-align: center;
+  font-size: 0.5em;
+  margin-top: 40px;
 }
 
 
+/***************************Contact Page*********************************/
 
+#contactContainer {
+  padding-left: 40px;
+}
 
-
+.wayToContact {
+  display: flex;
+  flex-direction: row;
+}
 
 
 
