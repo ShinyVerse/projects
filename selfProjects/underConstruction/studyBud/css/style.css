@@ -40,24 +40,31 @@ body {
 /**************************Nav bar*****************************/
 
 ul {
-  max-width: 90vw;
+  max-width: 100%;
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content:flex-start;
   border: black solid 1px;
   padding-top: 5px;
   padding-bottom:5px;
+  justify-content: space-around;
+  margin: auto;
 }
 
 ul a {
   text-decoration: none;
   color: black;
+  padding: 5px;
 }
 
 #navBar li {
-    margin-left: 10px;
+    margin-left:;
     padding: 2px;
+    align-items: center;
+}
+
+nav {
+  margin-bottom: 30px;
 }
 
 
@@ -174,6 +181,7 @@ footer {
 .wayToContact {
   display: flex;
   flex-direction: row;
+  margin-top: 15%;
 }
 
 /***************************About Page*********************************/
