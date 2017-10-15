@@ -42,13 +42,35 @@ body {
 ul {
   max-width: 100%;
   list-style: none;
+  font-size: 1em;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   border: black solid 1px;
-  padding-top: 5px;
-  padding-bottom:5px;
+  padding: 5px 30px;
   justify-content: space-around;
   margin: auto;
+  border-bottom: 3px solid black;
+}
+
+ .openTab {
+   height: 90px;
+}
+  .closedTab {
+    height: 1.3em;
+    overflow: hidden;
+  }
+
+
+
+ ul .mainNavOption {
+   padding:
+}
+
+ ul .subNavOption {
+  justify-content: center;
+  padding: 5px 80px;
+
 }
 
 ul a {
@@ -63,10 +85,24 @@ ul a {
     align-items: center;
 }
 
+
 nav {
   margin-bottom: 30px;
+  text-align: center;
 }
 
+ #navButton {
+  display: inline-block;
+  margin: auto;
+  padding: 5px 25px;
+  border-radius:  0 0 5px 5px;
+  background-color: black;
+  border: 1px outset black;
+  outline: none;
+  color: white;
+  font-weight:  bold;
+  font-size: 1em;
+}
 
 /***********************MainBody********************************/
 
@@ -163,6 +199,15 @@ div #decDiv3 {
   padding-left: 2px;
 }
 
+.section p {
+  margin: 15px;
+}
+
+.section h2 {
+  margin: 10px;
+}
+
+
 
 footer {
   position: sticky;
@@ -214,6 +259,7 @@ footer {
   border-radius: 50%;
   float: left;
   border: #00801a solid 1px;
+
 }
 
 .userBox h4 p {
@@ -222,9 +268,56 @@ footer {
   font-size: 1em;
 }
 
+/***********************Profile Page********************************/
 
+.userProfile {
+  height: 200px;
+  width: 200px;
+  background-color: #3bf796;
+  margin: auto;
+  border-radius: 10px;
+  border: #00801a solid 2px;
+  text-align: center;
+  margin-top: 25px;
+}
 
+.userProfile img {
+  position: relative;
+  height: 150px;
+  weight: 150px;
 
+}
 
+/***********************Media Queries********************************/
 
-.
+@media screen and (min-width: 700px) {
+  div #decDiv1{
+    height: 450px;
+    width: calc(95%);
+    border-radius: 30px;
+    border: black solid 2px;
+  }
+  .section {
+    height: 100px;
+    width: calc(95%);
+    margin: 5px 0px;
+    border-radius: 30px;
+    text-align: center;
+    display: none;
+  }
+  div #decDiv2 {
+    display: none;
+  }
+
+  div .decDiv {
+    display: none;
+  }
+
+  nav #navBar {
+    position: fixed;
+    display: inline-block;
+    margin-top: 20px;
+    width: 200px;
+    border-radius: 0 10px 10px 0;
+  }
+}
