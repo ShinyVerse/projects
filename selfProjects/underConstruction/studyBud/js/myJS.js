@@ -1,5 +1,3 @@
-
-
 $('.singleItem').slick();
 
 var $navButton = $("#navButton");
@@ -25,11 +23,23 @@ $navButton.on("click", function(){
 });
 
 // Action when mainBody buttons pressed
+var current = 2;
+var sectionLength = $(".section").length;
 
 $("#mainLeftButton").on("click", function(){
-  alert("left clicked!");
+ if (current < 2){
+    current = sectionLength;
+    return current;
+  } else {
+  return current--;
+}
 });
 
 $("#mainRightButton").on("click", function(){
-  alert("right clicked!");
+  if (current > sectionLength - 1 ){
+  current = 1;
+  return current;
+} else {
+  return current++;
+}
 });

@@ -210,8 +210,9 @@ div #decDiv3 {
 
 
 footer {
-  position: sticky;
-  text-align: center;
+  position: fixed;
+  top: 90vh;
+  left:45vw;
   font-size: 0.5em;
   margin-top: 40px;
 }
@@ -339,8 +340,13 @@ footer {
   .section {
     height: 300px;
     width: 400px;
-    position: fixed;
+    position: absolute;
     border-radius: 10px;
+  }
+
+  #mainBody {
+    height: 100%;
+    width: 100%;
   }
 
   #section1 {
@@ -353,12 +359,30 @@ footer {
     background: url("../img/big_study1.jpeg");
     opacity:1;
     background-size: cover;
+    z-index: 40;
   }
 
   #section3 {
     background: url("../img/big_study2.jpeg");
     opacity: 1;
       background-size: cover;
+  }
+
+  #mainBody h2 {
+    font-size:  2.2em;
+    color: rgb(224, 221, 221);
+    background-color: rgba(0, 128, 26, 0.58);
+    border-radius: 10px;
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: black;
+  }
+
+  .mainButton {
+    padding: 10px;
+    border-radius: 50%;
+    color: #e4e4e4;
+    background-color: #00801a;
+    border: outset 2px #003e0d;
   }
 
   #mainLeftButton {
