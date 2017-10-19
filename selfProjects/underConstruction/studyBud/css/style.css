@@ -369,16 +369,24 @@ footer {
   }
 
   #mainBody h2 {
-    font-size:  2.2em;
+    font-size:  2em;
     color: rgb(224, 221, 221);
-    background-color: rgba(0, 128, 26, 0.58);
+    background-color:  rgba(255, 255, 255, 0.57);
     border-radius: 10px;
     -webkit-text-stroke-width: 0.4px;
     -webkit-text-stroke-color: black;
   }
 
+  #mainBody p {
+    background-color: rgba(255, 255, 255, 0.57);
+    padding: 20px;
+    margin-top: 120px;
+    font-size: 1em;
+    border-radius: 10px;
+  }
+
   .mainButton {
-    padding: 10px;
+    padding: 10px 13px;
     border-radius: 50%;
     color: #e4e4e4;
     background-color: #00801a;
@@ -399,3 +407,12 @@ footer {
     top: 9em;
     z-index: 100;
   }
+  #headerSection h1 {
+    margin: auto;
+    padding-left: 6em;
+  }
+}
+
+.mainNavOption , .subNavOption {
+  padding: 10px;
+}
