@@ -23,23 +23,34 @@ $navButton.on("click", function(){
 });
 
 // Action when mainBody buttons pressed
+var prevCurrent;
 var current = 2;
 var sectionLength = $(".section").length;
 
 $("#mainLeftButton").on("click", function(){
  if (current < 2){
+   prevCurrent = current;
     current = sectionLength;
-    return current;
+    $("#section" + prevCurrent).css("z-index", "-10");
+    $("#section" + current).css("z-index", "40");
   } else {
-  return current--;
+  prevCurrent = current;
+  current--;
+  $("#section" + prevCurrent).css("z-index", "-10");
+  $("#section" + current).css("z-index", "40");
 }
 });
 
 $("#mainRightButton").on("click", function(){
   if (current > sectionLength - 1 ){
+  prevCurrent = current;
   current = 1;
-  return current;
+  $("#section" + prevCurrent).css("z-index", "-10");
+  $("#section" + current).css("z-index", "40");
 } else {
-  return current++;
+  prevCurrent = current;
+  current++;
+  $("#section" + prevCurrent).css("z-index", "-10");
+  $("#section" + current).css("z-index", "40");
 }
 });
