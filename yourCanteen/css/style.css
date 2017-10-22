@@ -1,0 +1,115 @@
+/*font-family: 'Lato', sans-serif;*/
+
+html {
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Lato', sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 20px;
+  margin: 0px;
+}
+
+nav li {
+   margin-bottom: 10px;
+   font-size: 1.2em;
+ }
+
+  nav li:nth-child(2) {
+    color: lightgrey;
+  }
+
+.listingBox {
+  background-color: lightGrey;
+}
+
+.feature {
+  height: 250px;
+  width: 100%;
+
+  text-align: center;
+  padding: 0;
+  margin: 0px;
+}
+
+#feature1{
+  background-image: url("../img/img1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#feature2 {
+  background-image: url("../img/img3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ .feature p{
+  display: table-cell;
+  vertical-align: middle;
+  width: 200px;
+  height: 50px;
+  background-color: rgb(93,124,142);
+  position: relative;
+  color: rgb(255,255,255);
+  font-weight: bold;
+  font-size: 1em;
+  left: 150px;
+}
+
+.info-listing {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+.chefPic {
+  height: 40px;
+  width: 40px;
+  margin: 0px;
+  padding: 5px;
+}
+
+.restaurantName{
+  font-weight: bold;
+}
+
+.distanceSlash {
+  color: red;
+  font-weight: bold;
+}
+
+
+.pricing {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  height: 30px;
+  justify-content: flex-end;
+  padding: 0px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.pricing p {
+  margin: 0px 10px;
+}
+
+.origPrice {
+  color: rgb(164,170,179);
+  text-decoration: line-through;
+}
+
+.dish-info {
+  margin: 0px 10px;
+}
