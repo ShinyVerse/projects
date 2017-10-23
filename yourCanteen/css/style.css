@@ -1,5 +1,9 @@
 /*font-family: 'Lato', sans-serif;*/
 
+*{
+  list-style: none;
+}
+
 html {
   height: 100%;
   list-style: none;
@@ -132,6 +136,43 @@ footer{
   border: black 1px solid;
 }
 
+/*******************SELECTION PAGE***********************/
+
+input[name=search] {
+  margin: 60px 40px 10px ;
+  width: 80%;
+  height: 40px;
+  border: none;
+  outline: none;
+  overflow: hidden;
+}
+
+ #foodCategories {
+  border-top: 1px solid rgb(179,89,112);
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding-left: 0px;
+  padding-top: 40px;
+}
+
+ #foodCategories li {
+   line-height: 0.5em;
+   width: 20%;
+   height: 0.5em;;
+   padding: 15px;
+   margin: 20px;
+   background-color: lightgrey;
+   border-radius: 40px 40px 40px 40px;
+   text-align: center;
+   display: table-cell;
+   vertical-align: middle;
+ }
+
 /*******************MEDIA QUERIES***********************/
 @media only screen and (min-width: 360px) {
     .feature p {
@@ -174,4 +215,17 @@ footer{
     .feature p {
       right: -220px;
     }
+}
+
+@media only screen and (min-width: 1450px) {
+  #foodCategories li {
+    line-height: 2em;
+    width: calc(100% * (1/4) - 10px - 1px);
+    height: 2em;;
+    padding: 15px;
+    margin: 40px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
