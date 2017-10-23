@@ -11,25 +11,28 @@
     <title>Your Canteen</title>
   </head>
   <body>
-    <img src="img\landingPageImg\svg\logo.svg" alt="Logo"/>
+    <div id="landingPageMain">
+      <img id="logoIcon" src="img\landingPageImg\svg\logo.svg" alt="Logo"/>
 
-    <img src="img\landingPageImg\logoText@2x.png" alt="Your Canteen"/>
-    <p> … is an online marketplace for independent chefs to sell authentic,
-       affordable dishes to time-poor, health conscious consumers.
-        We’re using machine learning to deliver tailored meal suggestions to our customers.</p>
+      <img id="yourCanteen" src="img\landingPageImg\logoText@2x.png" alt="Your Canteen"/>
+      <p id="landingInfo"> … is an online marketplace for independent chefs to sell authentic,
+         affordable dishes to time-poor, health conscious consumers.
+          We’re using machine learning to deliver tailored meal suggestions to our customers.</p>
 
-    <img src="img\landingPageImg\svg\buttonAndroid.svg" alt="Android App"/>
-    <img src="img\landingPageImg\svg\buttonIos.svg" alt="Ios App"/>
+      <div id="signUpsection">
+        <input id="emailAddress" type="email">
+        <button type="button">Sign Up</button>
+      </div>
 
-    <div id="signUpsection">
-      <input id="emailAddress" type="email">
-      <button type="button">Sign Up</button>
+      <img src="img\landingPageImg\dish2.jpg" srcset="img\landingPageImg\dish2@2x.jpg 1000w, img\landingPageImg\dish2@3x.jpg" alt="dish2"/>
+      <img src="img\landingPageImg\dish3.jpg" srcset="img\landingPageImg\dish3@2x.jpg 1000w, img\landingPageImg\dish3@3x.jpg" alt="dish3"/>
+      <img src="img\landingPageImg\dish4.jpg" srcset="img\landingPageImg\dish4@2x.jpg 1000w, img\landingPageImg\dish4@3x.jpg" alt="dish4"/>
     </div>
 
-    <img src="img\landingPageImg\dish2.jpg" srcset="img\landingPageImg\dish2@2x.jpg 1000w, img\landingPageImg\dish2@3x.jpg" alt="dish2"/>
-<img src="img\landingPageImg\dish3.jpg" srcset="img\landingPageImg\dish3@2x.jpg 1000w, img\landingPageImg\dish3@3x.jpg" alt="dish3"/>
-<img src="img\landingPageImg\dish4.jpg" srcset="img\landingPageImg\dish4@2x.jpg 1000w, img\landingPageImg\dish4@3x.jpg" alt="dish4"/>
-
+      <div id="appComing">
+        <img src="img\landingPageImg\svg\buttonAndroid.svg" alt="Android App"/>
+        <img src="img\landingPageImg\svg\buttonIos.svg" alt="Ios App"/>
+      </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
