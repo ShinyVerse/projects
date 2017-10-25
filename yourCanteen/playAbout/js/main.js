@@ -1,18 +1,21 @@
-var $listingBox = $("<div class='listingBox>'</div>");
+
 var $feature = $("<div class='feature'></div>");
 var $spanP = $("<span><p></p></span>");
 
 $.getJSON('https://api-staging.yourcanteen.com/dishes?latitude=51.5074&longitude=-0.127758&radius=10000&date='+ showCurrentDate() +'', function(data){
-  $.each(data.dishList, function(key, value){
-      var image = value.images[0];
-        $(".outerContainer").append($listingBox);
-        $listingBox.append($feature);
-        $feature.append("<img src= '" + image + "'/>");
-        $feature.append($spanP);
-        $spanP.innerHTML= "Some words";
 
+  $.each(data.dishList, function(key, value){
+
+        console.log(value.images[0]);
+        var image = value.images[0];
+        var id  = value.id;
+        var $listingBox = $("<div id ='" + id +  "' class='listingBox'></div>");
+
+        $listingBox.append($("<div class='feature'></div>").append("<img src= '" + image + "'/>" ));
+        $spanP.insertAfter($(".feature img"));
+        $(".outerContainer").append($listingBox);
   });
-  });
+});
 
 function callDaysData(){
   if ($("#today").hasClass("selected")){
