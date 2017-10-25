@@ -44,31 +44,30 @@ nav li {
   text-align: center;
   padding: 0;
   margin: 0px;
+  position: relative;
 }
 
-#feature1{
-  background-image: url("../img/img1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+.feature img {
+  height: 100%;
+  width: 100%;
 }
 
-#feature2 {
-  background-image: url("../img/img3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+.feature p {
+  position: absolute;
+  top: -18px;
+  left: 120px;
 }
 
- .feature p{
+ .feature span p{
   display: table-cell;
   vertical-align: middle;
   width: 200px;
-  height: 50px;
+  height: 40px;
   background-color: rgb(93,124,142);
-  position: relative;
   color: rgb(255,255,255);
   font-weight: bold;
-  font-size: 1em;
-  right: -135px;
+  font-size: 1.1em;
+  padding-top: 20px;
 }
 
 .info-listing {
