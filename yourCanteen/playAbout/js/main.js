@@ -1,7 +1,16 @@
+var $listingBox = $("<div class='listingBox>'</div>");
+var $feature = $("<div class='feature'></div>");
+var $spanP = $("<span><p></p></span>");
+
 $.getJSON('https://api-staging.yourcanteen.com/dishes?latitude=51.5074&longitude=-0.127758&radius=10000&date='+ showCurrentDate() +'', function(data){
-  $.each(data.dishList, function(i, value){
+  $.each(data.dishList, function(key, value){
       var image = value.images[0];
-        $(".sampleBox").append("<img src= '" + image + "'/>");
+        $(".outerContainer").append($listingBox);
+        $listingBox.append($feature);
+        $feature.append("<img src= '" + image + "'/>");
+        $feature.append($spanP);
+        $spanP.innerHTML= "Some words";
+
   });
   });
 
@@ -10,7 +19,7 @@ function callDaysData(){
     $.getJSON('https://api-staging.yourcanteen.com/dishes?latitude=51.5074&longitude=-0.127758&radius=10000&date='+ showCurrentDate() +'', function(data){
       $.each(data.dishList, function(i, value){
           var image = value.images[0];
-            $(".sampleBox").append("<img src= '" + image + "'/>");
+            $(".outerContainer").append("<img src= '" + image + "'/>");
       });
       });
 
@@ -18,7 +27,7 @@ function callDaysData(){
     $.getJSON('https://api-staging.yourcanteen.com/dishes?latitude=51.5074&longitude=-0.127758&radius=10000&date='+ showTomorrowDate() +'', function(data){
       $.each(data.dishList, function(i, value){
           var image = value.images[0];
-            $(".sampleBox").append("<img src= '" + image + "'/>");
+            $(".outerContainer").append("<img src= '" + image + "'/>");
       });
       });
   }
