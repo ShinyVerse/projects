@@ -1,16 +1,25 @@
 $.getJSON('https://api-staging.yourcanteen.com/dishes?latitude=51.5074&longitude=-0.127758&radius=10000&date='+ showCurrentDate() +'', function(data){
-    $(".sampleBox").append("<img src= '" + data.dishList[1].images[0] + "'/>");
+  $.each(data.dishList, function(i, value){
+      var image = value.images[0];
+        $(".sampleBox").append("<img src= '" + image + "'/>");
+  });
   });
 
 function callDaysData(){
   if ($("#today").hasClass("selected")){
     $.getJSON('https://api-staging.yourcanteen.com/dishes?latitude=51.5074&longitude=-0.127758&radius=10000&date='+ showCurrentDate() +'', function(data){
-        $(".sampleBox").append("<img src= '" + data.dishList[1].images[0] + "'/>");
+      $.each(data.dishList, function(i, value){
+          var image = value.images[0];
+            $(".sampleBox").append("<img src= '" + image + "'/>");
+      });
       });
 
   } else if ($("#tomorrow").hasClass("selected")){
     $.getJSON('https://api-staging.yourcanteen.com/dishes?latitude=51.5074&longitude=-0.127758&radius=10000&date='+ showTomorrowDate() +'', function(data){
-        $(".sampleBox").append("<img src='img/img1.jpg'/>");
+      $.each(data.dishList, function(i, value){
+          var image = value.images[0];
+            $(".sampleBox").append("<img src= '" + image + "'/>");
+      });
       });
   }
 }
