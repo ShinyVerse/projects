@@ -1,0 +1,273 @@
+/*font-family: 'Lato', sans-serif;*/
+.sampleBox img {
+  height: 200px;
+  width: 300px;
+}
+
+
+*{
+  list-style: none;
+}
+
+html {
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Lato', sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 20px;
+  margin: 0px;
+}
+
+nav li {
+   margin-bottom: 10px;
+   font-size: 1.2em;
+   color: lightgrey;
+ }
+
+  .selected {
+    color: black;
+  }
+
+.listingBox {
+  background-color: lightGrey;
+}
+
+.feature {
+  height: 250px;
+  width: 100%;
+
+  text-align: center;
+  padding: 0;
+  margin: 0px;
+}
+
+#feature1{
+  background-image: url("../img/img1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#feature2 {
+  background-image: url("../img/img3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ .feature p{
+  display: table-cell;
+  vertical-align: middle;
+  width: 200px;
+  height: 50px;
+  background-color: rgb(93,124,142);
+  position: relative;
+  color: rgb(255,255,255);
+  font-weight: bold;
+  font-size: 1em;
+  right: -135px;
+}
+
+.info-listing {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+.chefPic {
+  height: 40px;
+  width: 40px;
+  margin: 0px;
+  padding: 5px;
+}
+
+.restaurantName{
+  font-weight: bold;
+}
+
+.distanceSlash {
+  color: red;
+  font-weight: bold;
+}
+
+
+.pricing {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  height: 30px;
+  justify-content: flex-end;
+  padding: 0px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.pricing p {
+  margin: 0px 10px;
+}
+
+.origPrice {
+  color: rgb(164,170,179);
+  text-decoration: line-through;
+}
+
+.dish-info {
+  margin: 0px 10px;
+}
+
+footer{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.footerIcon {
+  background-color: rgb(71, 71, 71);
+  height: 70px;
+  width: 25%;
+  padding: 0px;
+  border: black 1px solid;
+}
+
+/*******************SELECTION PAGE***********************/
+
+input[name=search] {
+  margin: 60px 40px 10px ;
+  width: 80%;
+  height: 40px;
+  border: none;
+  outline: none;
+  overflow: hidden;
+}
+
+ #foodCategories {
+  border-top: 1px solid rgb(179,89,112);
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding-left: 0px;
+  padding-top: 40px;
+}
+
+ #foodCategories li {
+   line-height: 0.5em;
+   width: 20%;
+   height: 0.5em;;
+   padding: 15px;
+   margin: 20px;
+   background-color: lightgrey;
+   border-radius: 40px 40px 40px 40px;
+   text-align: center;
+   display: table-cell;
+   vertical-align: middle;
+ }
+ /*******************LANDING PAGE***********************/
+
+
+ #logoIcon {
+    margin: 5px 0px 5px 5px;
+    order: 0;
+ }
+
+ #yourCanteen {
+   float: right;
+   height: 1.4em;
+   margin: 40px 15px 0px 0px;
+   order:1;
+ }
+
+ #landingInfo {
+   padding: 0px 10px;
+ }
+
+ #signUpsection {
+   background-image: url("../img/landingPageImg/dish1@2x.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 100px;
+ }
+
+  #signUpsection input {
+    position: relative;
+  }
+
+
+
+
+
+
+
+
+/*******************MEDIA QUERIES***********************/
+@media only screen and (min-width: 360px) {
+    .feature p {
+        right: -170px;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    .feature p {
+        right: -180px;
+    }
+}
+
+@media only screen and (min-width: 410px) {
+    .feature p {
+        right: -225px;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .feature p {
+        padding: 15px;
+        width: 250px;
+        font-size: 1.3em;
+        right: -480px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .outerContainer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .listingBox{
+        height: 400px;
+        width: 500px;
+    }
+    .feature p {
+      right: -220px;
+    }
+}
+
+@media only screen and (min-width: 1450px) {
+  #foodCategories li {
+    line-height: 2em;
+    width: calc(100% * (1/4) - 10px - 1px);
+    height: 2em;;
+    padding: 15px;
+    margin: 40px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
