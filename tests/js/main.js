@@ -5,7 +5,7 @@ $('.outerContainer').append($("<div id ='" + id +  "' class='listingBox'></div>"
 
 // Add feature div
 
-$('#' + id).append($("<div class='feature'></div>")
+$("body").append('<p class="dish-info">Some information about the dish...</p>');
 
 // var $listingBox = ;
 //

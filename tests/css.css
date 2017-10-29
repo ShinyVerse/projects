@@ -115,7 +115,8 @@ div .chefPic {
 }
 
 .dish-info {
-  margin: 0px 10px;
+  margin: 0px 50px;
+  color: red;
 
 }
 
@@ -213,19 +214,19 @@ input[name=search] {
 /*******************MEDIA QUERIES***********************/
 @media only screen and (min-width: 360px) {
     .feature p {
-        left: calc(100% - 200px);
+        right: -170px;
     }
 }
 
 @media only screen and (min-width: 375px) {
     .feature p {
-        left: calc(100% - 200px);
+        right: -180px;
     }
 }
 
 @media only screen and (min-width: 410px) {
     .feature p {
-        left: calc(100% - 200px);
+        right: -225px;
     }
 }
 
@@ -235,7 +236,6 @@ input[name=search] {
         width: 250px;
         font-size: 1.3em;
         right: -480px;
-        left: calc(100% - 230px);
     }
 }
 
@@ -249,7 +249,6 @@ input[name=search] {
     .listingBox{
         height: 400px;
         width: 500px;
-        margin-bottom: 20px;
     }
     .feature p {
       right: -220px;
