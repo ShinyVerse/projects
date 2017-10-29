@@ -74,6 +74,7 @@ div .info-listing {
   display: flex;
   flex-wrap: wrap;
   padding: 15px;
+
 }
 
 div .chefPic {
@@ -116,7 +117,8 @@ div .chefPic {
 
 .dish-info {
   margin: 0px 10px;
-
+  font-size: 1.4em;
+  font-weight: 300;
 }
 
 footer{

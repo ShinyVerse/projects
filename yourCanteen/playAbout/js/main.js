@@ -8,6 +8,7 @@ function createPageData(data) {
     console.log(value.images[0]);
     var oldPrice = value.originalPrice.value /100;
     var nowPrice = value.price.value /100;
+    var nameOfDish = value.name;
 
     var starRatingID = 0;
     var image = value.images[0];
@@ -26,9 +27,9 @@ function createPageData(data) {
     var $actualDistance = $('<p id="actualDistance'+ starRatingID + '">&#x2662; 1m</p></br>');
     var $divPrice = $('<div class="pricing"></div>');
     //append to divPrice
-    var $origAndCurrentPrice = $('<p class="origPrice">'+ changeToPrice(oldPrice) +'</p><p class="currentPrice">'+ changeToPrice(nowPrice) +'</p>');
+    var $origAndCurrentPrice = $('<p class="origPrice">£'+ changeToPrice(oldPrice) +'</p><p class="currentPrice">£'+ changeToPrice(nowPrice) +'</p>');
     //done.
-    var $synopsis =  $('<p class="dish-info">Some information about the dish...</p>');
+    var $synopsis =  $('<p class="dish-info">'+ nameOfDish +'</p>');
     //end of dish-info
 
     $feature.append($image);
