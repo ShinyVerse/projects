@@ -42,7 +42,7 @@ nav li {
   width: 100%;
 
   text-align: center;
-  padding: 0;
+  padding: 0px;
   margin: 0px;
   position: relative;
 }
@@ -54,7 +54,7 @@ nav li {
 
 .feature p {
   position: absolute;
-  top: -18px;
+  top: 25%;
   left: 120px;
 }
 
@@ -66,8 +66,8 @@ nav li {
   background-color: rgb(93,124,142);
   color: rgb(255,255,255);
   font-weight: bold;
-  font-size: 1.1em;
-  padding-top: 20px;
+  font-size: 1.2em;
+  padding-top: 25px;
 }
 
 div .info-listing {

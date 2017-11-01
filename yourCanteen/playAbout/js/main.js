@@ -3,12 +3,17 @@ function changeToPrice(price){
 }
 
 function createPageData(data) {
+
+
   $.each(data.dishList, function(key, value) {
 
     console.log(value.images[0]);
     var oldPrice = value.originalPrice.value /100;
     var nowPrice = value.price.value /100;
     var nameOfDish = value.name;
+    var chefId = value.chefId;
+
+    var nameOfRestaurant = data.chefIdToChefInfo["e5eb1ccf-bd45-4d01-8e2a-0d10cc275f62"].kitchenName;
 
     var starRatingID = 0;
     var image = value.images[0];
@@ -21,7 +26,7 @@ function createPageData(data) {
 
     var $infoListing = $("<div class='info-listing'></div>");
     var $chefImage = $("<img src='img/chef1.jpg' alt='Chef profile picture' class='chefPic'/>");
-    var $restaurantName =   $('<p class="restaurantName">Anything Here</p>');
+    var $restaurantName =   $('<p class="restaurantName">'+ nameOfRestaurant +'</p>');
     var $starRate = $('<p id="distance'+ starRatingID +'">&#x2605; &#x2605; &#x2605; &#x2605; &#x2606;</p>');
     var $distanceSlash = $('<p class="distanceSlash">/</p>');
     var $actualDistance = $('<p id="actualDistance'+ starRatingID + '">&#x2662; 1m</p></br>');
@@ -52,8 +57,8 @@ function createPageData(data) {
   });
 }
 
-// $.getJSON('https://api-staging.yourcanteen.com/dishes?latitude=51.5074&longitude=-0.127758&radius=10000&date=' + showCurrentDate() + '', function(data) {
- $.getJSON('https://api-staging.yourcanteen.com/dishes?latitude=51.5074&longitude=-0.127758&radius=10000&date=2017-10-30', function(data){
+$.getJSON('https://api-staging.yourcanteen.com/dishes?latitude=51.5074&longitude=-0.127758&radius=10000&date=' + showCurrentDate() + '', function(data) {
+ // $.getJSON('https://api-staging.yourcanteen.com/dishes?latitude=51.5074&longitude=-0.127758&radius=10000&date=2017-10-30', function(data){
   createPageData(data);
 
 
