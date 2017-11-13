@@ -241,7 +241,7 @@ input[name=search] {
     }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
     .outerContainer {
       display: flex;
       flex-direction: row;
