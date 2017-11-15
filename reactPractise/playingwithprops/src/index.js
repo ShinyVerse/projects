@@ -17,3 +17,23 @@ ReactDOM.render(
   element,
   document.getElementById('root')
 );
+
+
+//Goodbye multiple
+
+
+
+function App() {
+  return (
+    <div>
+      <Goodbye name="Sara"  tasks={arrayTasks[1]} />
+      <Goodbye name="Cahal"  tasks={arrayTasks[2]} />
+      <Goodbye name="Edite"  tasks={arrayTasks[0]}/>
+    </div>
+  );
+}
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root2')
+);
