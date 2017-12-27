@@ -7,7 +7,7 @@ class ButtonDropDown extends Component {
     this.toggleMenu = this.toggleMenu.bind(this);
     this.state = {
       menuActive: false,
-      selectedMenu: "Cheap"
+      selectedMenu: this.props.option1
     };
   }
 
@@ -28,9 +28,9 @@ class ButtonDropDown extends Component {
     if (this.state.menuActive) {
       menu = <div>
         <ul>
-          <li onClick={this.selection}>Cheap</li>
-          <li onClick={this.selection}>Moderate</li>
-          <li onClick={this.selection}>Expensive AF</li>
+          <li onClick={this.selection}>{this.props.option1}</li>
+          <li onClick={this.selection}>{this.props.option2}</li>
+          <li onClick={this.selection}>{this.props.option3}</li>
         </ul>
       </div>
     } else {
