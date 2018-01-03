@@ -1,0 +1,22 @@
+button {
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  display: flex;
+}
+
+div#menu{
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  color: blue;
+  flex-wrap: nowrap;
+}
+
+li {
+  padding-top: 20px;
+  padding-left: -200px;
+  display: flex;
+  flex-direction: column;
+}

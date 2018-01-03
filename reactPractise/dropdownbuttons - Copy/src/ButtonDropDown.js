@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 
-import './ButtonDrop.css';
-
 class ButtonDropDown extends Component {
   constructor(props) {
     super(props);
@@ -22,16 +20,14 @@ class ButtonDropDown extends Component {
     let newSelection = e.target;
     if (this.state.selectedMenu !== newSelection.innerHTML) {
         this.setState({selectedMenu:newSelection.innerHTML}) ;
-
-        this.toggleMenu()
     }
   }
 
   render() {
     let menu;
     if (this.state.menuActive) {
-      menu = <div >
-        <ul >
+      menu = <div>
+        <ul>
           <li onClick={this.selection}>{this.props.option1}</li>
           <li onClick={this.selection}>{this.props.option2}</li>
           <li onClick={this.selection}>{this.props.option3}</li>
@@ -42,7 +38,7 @@ class ButtonDropDown extends Component {
     }
     return (
       <div id="menu">
-        <button  className="buttonBar" onClick={this.toggleMenu}>{this.state.selectedMenu}</button>
+        <button onClick={this.toggleMenu}>{this.state.selectedMenu}</button>
         {menu}
       </div>
     )

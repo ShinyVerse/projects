@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 
 class Toggle extends React.Component {
@@ -13,7 +13,7 @@ class Toggle extends React.Component {
   this.newClick = this.newClick.bind(this);
   }
 
-  handleClick() {  
+  handleClick() {
     this.setState(prevState => ({
       isToggleOn: !prevState.isToggleOn}));
   }

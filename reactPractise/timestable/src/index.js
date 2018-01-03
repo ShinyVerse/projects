@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TimesTables from './TimesTables';
+import Times from './Times';
+
 
 
 import './index.css';
 
 ReactDOM.render(
-    <TimesTables />,
+    <Times />,
     document.getElementById('root')
 );

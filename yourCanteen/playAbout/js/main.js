@@ -45,6 +45,8 @@ function createPageData(data) {
 
 
   $.each(data.dishList, function(key, value) {
+    console.log(key);
+    console.log(value);
 
     console.log(value.images[0]);
     var oldPrice = value.originalPrice.value /100;

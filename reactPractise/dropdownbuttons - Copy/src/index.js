@@ -5,11 +5,10 @@ import ButtonDropDown from './ButtonDropDown';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
-  <div className="Hello">
-    <ButtonDropDown option1="Today" option2="Tomorrow" option3="Day After Tomorrow"/>
-    <ButtonDropDown option1="££" option2="£££" option3="££££"/>
-    <ButtonDropDown option1="Delivery" option2="Collect" option3="Eat In"/>
-
+  <div>
+    <ButtonDropDown option1="cats" option2="dogs" option3="horses"/>
+    <ButtonDropDown option1="cheap" option2="moderate" option3="expensive"/>
+    <ButtonDropDown option1="Collection" option2="Delivery" option3="Pick up"/>
   </div>,
 document.getElementById('root'));
 registerServiceWorker();
