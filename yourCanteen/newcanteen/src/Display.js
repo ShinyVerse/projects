@@ -1,15 +1,23 @@
 import React, { Component } from 'react';
-import YourCanteen from './YourCanteen';
+
 
 
 class Display extends Component {
-  render() {
-     return (
-       <div>
 
-         <YourCanteen  products={this.props.products}  />
-       </div>
-     );
-   }
- }
+
+    render() {
+      console.log(this.props.products.dishList);
+      return (
+        <div>
+
+            {
+              this.props.products.dishList.map(product => {
+                    return <li product={product} key={product.id}>{product.cuisine}</li>})
+            }
+        </div>
+
+      );
+    }
+  }
+
 export default Display;
