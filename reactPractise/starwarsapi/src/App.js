@@ -31,7 +31,7 @@ class App extends Component {
           props.whateverInsertHere.searchableThing.  */}
 
           {/* //item can be titled as whatever, all others must follow first naming scheme. */}
-        {items.map(item => <Person key={item.mass} person={item}/>)}
+        {items.map(item => <Person key={item.id} person={item}/>)}
         {/* {items.map(item =>
           <Bday key={item.mass} year={item} />
         )} */}
@@ -41,6 +41,8 @@ class App extends Component {
   }
 }
 
-const Person = (props) => <h3>{props.person.name}</h3>
+const Person = (props) => <div><h3>{props.person.name}</h3>
+                                <img src={props.person.homeworld} alt="characterhomeland"/>
+                                </div>
 
 export default App;
