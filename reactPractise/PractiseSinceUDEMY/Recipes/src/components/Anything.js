@@ -11,11 +11,17 @@ const Anything = (props) => {
 
   const theRecipes = props.recipes;
 
-  const mappedRecipes = theRecipes.map((recipe) => <div key={recipe.title}>
+
+
+  const mappedRecipes = theRecipes.map((recipe) => <div key={recipe.title} onClick={(e) => {
+    e.preventDefault();
+    window.open(recipe.href);
+  }}>
     <li >{recipe.title}</li>
     <img src={recipe.thumbnail} alt="img" height="100" width="100"/>
   </div>)
   console.log(mappedRecipes);
+
   return (
     <ul>{mappedRecipes}</ul>
   // {props.recipes[0].title}

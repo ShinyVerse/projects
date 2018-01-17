@@ -32,7 +32,8 @@ class App extends Component {
        {
        ingredients: `${recipe.ingredients}`,
        thumbnail: `${recipe.thumbnail}`,
-       title: `${recipe.title}`
+       title: `${recipe.title}`,
+       href: `${recipe.href}`
      }
    )))
    .then(recipes => this.setState({loading: false, recipes: recipes })
@@ -40,6 +41,9 @@ class App extends Component {
    )
      .catch(error => console.log('failed', error))
  }
+
+
+
 
 
   render(){
