@@ -1,0 +1,10 @@
+a {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 10px 0px 5px;
+}
+
+.selected {
+  color: rgb(162, 255, 143);
+}

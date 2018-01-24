@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ol {
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  white-space: nowrap;
+}
+
+li {
+  padding: 10px 15px 10px 10px;
+}
