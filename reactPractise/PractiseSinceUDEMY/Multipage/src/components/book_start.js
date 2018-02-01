@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
         <img src={this.props.book.img}/>
         <h2>{this.props.book.title}</h2>
         <h4>{this.props.book.author}</h4>
-        <Link className="btn btn-primary" to='/'>
+        <Link className="btn btn-primary" to='/aboutbook'>
           What's it about...
         </Link>
       </div>
