@@ -18,16 +18,22 @@ class BookDescription extends Component {
 
   render(){
     return(
-      <div className="jumbotron jumbotron-fluid">
-        <div className="container">
-          <h2 className="display-4">What's is all about?</h2>
-          <p className="lead"  >{this.props.book.description}</p>
-          <h3>Rating:</h3>
-          <p>&#9733; &#9733; &#9733; &#9733; &#9733;</p>
-          <h3 className="alert alert-info" role="alert">
-            To get your paws on it <button onClick={this.takeToBook}>Click here!</button>
-          </h3>
-
+      <div>
+        <div className="jumbotron jumbotron-fluid">
+          <div className="container">
+            <h2 className="display-4">What's is all about?</h2>
+            <p className="lead"  >{this.props.book.description}</p>
+            <h3>Rating:</h3>
+            <p>&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+            <h3 className="alert alert-info" role="alert">
+              To get your paws on it <button onClick={this.takeToBook}>Click here!</button>
+            </h3>
+          </div>
+        </div>
+        <div className="text-xs-right">
+        <Link className="btn btn-primary text-xs-right" to='/'>
+          Back
+        </Link>
         </div>
       </div>
     );
