@@ -1,0 +1,21 @@
+body {
+  width: 100%;
+}
+.containerDiv {
+  width: 70%;
+}
+
+.main {
+  flex-direction: column;
+  justify-content: center;
+  padding: auto;
+  margin: auto;
+}
+
+@media (min-width: 770px){
+  .main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  }
+}
