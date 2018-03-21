@@ -39,16 +39,20 @@ tomPlus.addEventListener( "click", function(){
   shoppingCart["tomatoes"] = shoppingCart["tomatoes"] + 1;
 });
 carrotMinus.addEventListener( "click", function(){
- shoppingCart["carrots"] = shoppingCart["carrots"] - 1;
+  testForMinus(shoppingCart["carrots"]) ? shoppingCart["carrots"] = 0 : shoppingCart["carrots"] = shoppingCart["carrots"] - 1;
 });
 chocoMinus.addEventListener( "click", function(){
-  shoppingCart["chocolate"] = shoppingCart["chocolate"] - 1;
+  testForMinus(shoppingCart["chocolate"]) ? shoppingCart["chocolate"] = 0 : shoppingCart["chocolate"] = shoppingCart["chocolate"] - 1;
 });
 tomMinus.addEventListener( "click", function(){
-  shoppingCart["tomatoes"] = shoppingCart["tomatoes"] - 1;
+  testForMinus(shoppingCart["tomatoes"]) ? shoppingCart["tomatoes"] = 0 : shoppingCart["tomatoes"] = shoppingCart["tomatoes"] - 1;
 });
 
-
+function testForMinus(itemVal){
+  if (itemVal <= 0){
+    return true;
+  }
+}
 addToCart.addEventListener("click", function(){
   let total = shoppingCart["tomatoes"] + shoppingCart["chocolate"] + shoppingCart["carrots"];
   document.getElementById("cartBubble").innerHTML = total;
