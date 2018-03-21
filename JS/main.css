@@ -26,12 +26,12 @@ img {
 #cartBubble{
   background-color: #4a4a4a;
   color: white;
-  height: 40px;
+  height: 38px;
   width:50px;
   text-align: center;
   border-radius: 50%;
   font-size: 1.4em;
-  padding-top: 10px;
+  padding-top: 12px;
   margin-left: 4px;
 }
 
@@ -47,7 +47,7 @@ img {
   width:25px;
   background-color: #392780;
   color: white;
-  margin: 20px 20px 50px;
+  margin: 20px 20px 60px;
   margin-left: calc(50% - 20.5px);
   font-size: 1.2em;
   padding-top: 10px;
@@ -82,5 +82,7 @@ button {
   margin-top: 10px;
   background-color: #bef9ff;
   font-size: 1.2em;
+  margin: 0 0 20px;
   margin-left: calc(50% - 50px);
+
 }
