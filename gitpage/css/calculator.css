@@ -6,7 +6,7 @@
   height: 250px;
   border: #cde5ec 4px solid;
   background: linear-gradient(to right,  #cde5ec,  white, #cde5ec);
-  border-radius: 30px 30px 5px 5px;
+  border-radius: 15px 15px 5px 5px;
 
 }
 
@@ -16,7 +16,6 @@
   margin: 2.5px;
   border-radius: 10px;
   outline: none;
-
 }
 
 #calcScreen {
@@ -31,4 +30,8 @@
   margin-bottom: 10px;
   height: 30px;
   width: 150px;
+}
+
+.symbolError {
+  border: tomato 1.5px solid;
 }
