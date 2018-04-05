@@ -68,15 +68,20 @@ function check(result) {
     calcScreen.innerHTML = 0;
       break;
     case "-":
-      alert("non");
+    fresh = false;
+    buttonPressed = "minus";
+    calcScreen.innerHTML = 0;
       break;
     case "+":
-      alert("non");
+    fresh = false;
+    buttonPressed = "plus";
+    calcScreen.innerHTML = 0;
       break;
     case "C":
-    secondNum = [];
     firstNum = [];
+    secondNum = [];
     buttonPressed = "";
+    fresh = true;
     first = 0;
     second = 0;
     calcScreen.innerHTML = 0;
@@ -107,14 +112,16 @@ function checkOperator(operator, a, b) {
     buttonPressed = "";
       break;
     case "minus":
-    return function(a, b){
-      a - b;
-    }
+    calcScreen.innerHTML = a - b;
+    first = calcScreen.innerHTML = a - b;
+    secondNum = [];
+    buttonPressed = "";
       break;
     case "plus":
-    return function(a, b){
-      a + b;
-    }
+    calcScreen.innerHTML = a + b;
+    first = calcScreen.innerHTML = a + b;
+    secondNum = [];
+    buttonPressed = "";
       break;
     default:
       alert("default");
