@@ -24,7 +24,7 @@ function longestWord(sen) {
 //split the word into letters which returns an array
 //return the length of word, which will be used for the if comparison.
 function counting(word) {
-  var newWord = word.replace(/[^A-Za-z0-9]/g, '');
+  var newWord = word.replace(/[A-Za-z0-9]/g, '');
   // var noNums = newWord.replace(/[0-9]/g, '');
   var arr = newWord.split("");
   return arr.length;

@@ -12,9 +12,9 @@ function SimpleSymbols(str){
   //loop through the string
   for (var i = 1; i < arr.length - 1; i++){
   //test for letters
-  var letter = arr[i];
-  var testLetter = new RegExp("[a-z]");
-  var resultLetter = testLetter.test(letter);
+    var letter = arr[i];
+    var testLetter = new RegExp("[a-z]");
+    var resultLetter = testLetter.test(letter);
     //check if the loop is a letter
     if (resultLetter){
         //if i-1 and i+ is not a symbol return false

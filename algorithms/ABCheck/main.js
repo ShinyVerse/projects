@@ -4,19 +4,21 @@
 // separated by exactly 3 places anywhere in the string at least once
 // (ie. "lane borrowed" would result in true because there is exactly three characters
 //  between a and b). Otherwise return the string false.
-//
-function ABCheck(str) {
-  //start off as false unless changes this will be returned.
-  var result = false;
+
+var myFunctions = {};
+
+myFunctions.ABCheck = function(str) {
 
   for (var i = 0; i < str.length; i++) {
     if (str[i] === "a") {
       if (str[i + 4] === "b") {
-        result = true;
+        return true;
       }
       // console.log("index: " + i + " is an a.");
       // console.log("3 away from a is " + str[i + 4]);
     }
   }
-  return result;
+  return false;
 }
+
+module.exports = myFunctions;

@@ -18,9 +18,12 @@ function ExOh(str){
   }
   // console.log(x);
   // console.log(o);
+  //call function when checking. Ternary.
   if (x === o){
     return true;
   } else {
     return false;
   }
 }
+
+//count character function. takes str counts how many times there is a character: x or o or whatever passed.
