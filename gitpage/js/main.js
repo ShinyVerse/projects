@@ -16,12 +16,14 @@ hamburger.addEventListener("click", function() {
   toggleNav();
 });
 
-//calculator function.
+//calculator function: bubbling/capturing effect
 calcCase.onclick = function() {
   // alert(event.target.innerHTML);
   check(event.target.innerHTML);
 };
 
+//fresh is set to false when calculator in process of a sum.
+//below is calculators initial state.
 var fresh = true;
 // calcScreen.innerHTML = calcSoFar action jointArr;
 var secondNum = [];
@@ -31,9 +33,11 @@ var first = 0;
 var second = 0;
 var store = {}
 
+//returns calculator when pressing C or when pressing = if no number selected first.
 function clearCalcAll() {
   firstNum = [];
   secondNum = [];
+  //saves the operator to be used on both numbers
   buttonPressed = "";
   fresh = true;
   first = 0;
@@ -54,6 +58,7 @@ function check(result) {
     case "7":
     case "8":
     case "9":
+    //pushes first number.
       if (fresh) {
         firstNum.push(result);
         calcScreen.innerHTML = firstNum.join("");
@@ -63,7 +68,7 @@ function check(result) {
           setTimeout(function() {
             calcScreen.innerHTML = first
           }, 50);
-
+          //highlights the symbols as red if the user trys to enter number without first an operator(x,/,+ etc)
           Array.prototype.map.call(symbols, function(symbol) {
             symbol.classList.add("symbolError");
             setTimeout(function() {
@@ -72,7 +77,6 @@ function check(result) {
           });
           calcScreen.innerHTML = secondNum.join("");
           return calcScreen.innerHTML = secondNum.join("");
-
         }
         secondNum.push(result);
         calcScreen.innerHTML = secondNum.join("");

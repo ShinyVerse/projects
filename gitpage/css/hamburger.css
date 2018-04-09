@@ -1,27 +1,4 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Marketplace
-Explore
- @ShinyVerse
-Sign out
-107
-4,222 660 jonsuh/hamburgers
- Code  Issues 7  Pull requests 5  Projects 0  Wiki  Insights
-hamburgers/dist/hamburgers.css
-084d51c  on Jul 7, 2017
-@jonsuh jonsuh Merge branch 'feat/more-animations' into develop
 
-701 lines (628 sloc)  26.4 KB
-/*!
- * Hamburgers
- * @description Tasty CSS-animated hamburgers
- * @author Jonathan Suh @jonsuh
- * @site https://jonsuh.com/hamburgers
- * @link https://github.com/jonsuh/hamburgers
- */
 .hamburger {
   padding: 15px 15px;
   display: inline-block;
