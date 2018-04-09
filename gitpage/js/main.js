@@ -31,7 +31,6 @@ var firstNum = [];
 var buttonPressed = "";
 var first = 0;
 var second = 0;
-var store = {}
 
 //returns calculator when pressing C or when pressing = if no number selected first.
 function clearCalcAll() {
@@ -66,7 +65,7 @@ function check(result) {
       } else {
         if (buttonPressed === "") {
           setTimeout(function() {
-            calcScreen.innerHTML = first
+            calcScreen.innerHTML = first;
           }, 50);
           //highlights the symbols as red if the user trys to enter number without first an operator(x,/,+ etc)
           Array.prototype.map.call(symbols, function(symbol) {
@@ -88,22 +87,22 @@ function check(result) {
     case "÷":
       fresh = false;
       buttonPressed = "divide";
-      calcScreen.innerHTML = 0;
+      calcScreen.innerHTML = first;
       break;
     case "x":
       fresh = false;
       buttonPressed = "times";
-      calcScreen.innerHTML = 0;
+      calcScreen.innerHTML = first;
       break;
     case "-":
       fresh = false;
       buttonPressed = "minus";
-      calcScreen.innerHTML = 0;
+      calcScreen.innerHTML = first;
       break;
     case "+":
       fresh = false;
       buttonPressed = "plus";
-      calcScreen.innerHTML = 0;
+      calcScreen.innerHTML = first;
       break;
     case "C":
       clearCalcAll();
