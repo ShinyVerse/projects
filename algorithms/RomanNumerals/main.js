@@ -5,10 +5,9 @@ var romanTotal = [];
 
 var len = num.toString().length;
 var numStr = num.toString();
-var split = num.toString().split("");
+
 
 if (len === 1){
-  console.log("len = 1");
    romanTotal.push(returnDigit(parseInt(numStr.charAt(0))));
 }
 if (len === 2){
