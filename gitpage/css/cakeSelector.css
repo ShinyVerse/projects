@@ -92,8 +92,27 @@ button {
 }
 
 
-@media screen and (min-width: 400px){
-  #shoppingSection{
-  width: 400px;
+@media screen and (min-width: 500px){
+  #itemSelection{
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
   }
+
+  .item {
+    width: 200px;
+    height: 300px;
+    margin: auto;
+  }
+img.item {
+    padding-left: calc(15%);
+}
+.itemBubble {
+  margin-left: calc(42%);
+}
+.plus{
+  margin-left: 20px;
+}
+
 }
