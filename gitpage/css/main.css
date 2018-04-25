@@ -82,6 +82,10 @@ h2 {
   text-align: center;
 }
 
+.projectsContainer {
+  display: block;
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 500px) {
