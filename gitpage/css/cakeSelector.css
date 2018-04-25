@@ -109,7 +109,9 @@ img.item {
     padding-left: calc(15%);
 }
 .itemBubble {
-  margin-left: calc(42%);
+  margin-left: calc(40%);
+  padding-left: 20px;
+  padding-right: 10px;
 }
 .plus{
   margin-left: 20px;
