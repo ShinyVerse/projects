@@ -161,9 +161,9 @@ var carrotMinus = document.getElementById("carrotMinus");
 var chocoMinus  = document.getElementById("chocoMinus");
 var tomMinus  = document.getElementById("tomMinus");
 //count bubbles to show current amount chosen.
-var carrotCount = document.getElementById("carrotCount");
-var chocoCount = document.getElementById("chocoCount");
-var tomCount = document.getElementById("tomCount");
+var cakeCount = document.getElementById("cakeCount");
+var jamCount = document.getElementById("jamCount");
+var creamCount = document.getElementById("creamCount");
 // add to cart total button
 var addToCart = document.getElementById("addToCart");
 
@@ -175,16 +175,16 @@ var shoppingCart = {
   "tomatoes": 0
 }
 
-carrotCount.innerHTML = shoppingCart["carrots"];
-chocoCount.innerHTML = shoppingCart["chocolate"];
-tomCount.innerHTML = shoppingCart["tomatoes"];
+cakeCount.innerHTML = shoppingCart["carrots"];
+jamCount.innerHTML = shoppingCart["chocolate"];
+creamCount.innerHTML = shoppingCart["tomatoes"];
 
 //Must search for better way to refresh page allowing accurate tellings of bubble counts. {react will do this.}
 setInterval(function()
 {
-  carrotCount.innerHTML = shoppingCart["carrots"];
-  chocoCount.innerHTML = shoppingCart["chocolate"];
-  tomCount.innerHTML = shoppingCart["tomatoes"];
+  cakeCount.innerHTML = shoppingCart["carrots"];
+  jamCount.innerHTML = shoppingCart["chocolate"];
+  creamCount.innerHTML = shoppingCart["tomatoes"];
 }, 500);
 
 //need to find out how to refactor into one function.
