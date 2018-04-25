@@ -153,13 +153,13 @@ function checkOperator(operator, a, b) {
 ///////////////////////// CAKE SELECTOR JAVASCRIPT////////////////////////////
 // BY ELEMENT GRAB: allows js to have quick access to the id of a button
 //adds
-var carrotPlus = document.getElementById("carrotPlus");
-var chocoPlus = document.getElementById("chocoPlus");
-var tomPlus = document.getElementById("tomPlus");
+var cakePlus = document.getElementById("cakePlus");
+var jamPlus = document.getElementById("jamPlus");
+var creamPlus = document.getElementById("creamPlus");
 //same for minus
-var carrotMinus = document.getElementById("carrotMinus");
-var chocoMinus  = document.getElementById("chocoMinus");
-var tomMinus  = document.getElementById("tomMinus");
+var cakeMinus = document.getElementById("cakeMinus");
+var jamMinus  = document.getElementById("jamMinus");
+var creamMinus  = document.getElementById("creamMinus");
 //count bubbles to show current amount chosen.
 var cakeCount = document.getElementById("cakeCount");
 var jamCount = document.getElementById("jamCount");
@@ -188,22 +188,22 @@ setInterval(function()
 }, 500);
 
 //need to find out how to refactor into one function.
-carrotPlus.addEventListener( "click", function(){
+cakePlus.addEventListener( "click", function(){
   shoppingCart["carrots"] = shoppingCart["carrots"] + 1;
 });
-chocoPlus.addEventListener( "click", function(){
+jamPlus.addEventListener( "click", function(){
   shoppingCart["chocolate"] = shoppingCart["chocolate"] + 1;
 });
-tomPlus.addEventListener( "click", function(){
+creamPlus.addEventListener( "click", function(){
   shoppingCart["tomatoes"] = shoppingCart["tomatoes"] + 1;
 });
-carrotMinus.addEventListener( "click", function(){
+cakeMinus.addEventListener( "click", function(){
   testForMinus(shoppingCart["carrots"]) ? shoppingCart["carrots"] = 0 : shoppingCart["carrots"] = shoppingCart["carrots"] - 1;
 });
-chocoMinus.addEventListener( "click", function(){
+jamMinus.addEventListener( "click", function(){
   testForMinus(shoppingCart["chocolate"]) ? shoppingCart["chocolate"] = 0 : shoppingCart["chocolate"] = shoppingCart["chocolate"] - 1;
 });
-tomMinus.addEventListener( "click", function(){
+creamMinus.addEventListener( "click", function(){
   testForMinus(shoppingCart["tomatoes"]) ? shoppingCart["tomatoes"] = 0 : shoppingCart["tomatoes"] = shoppingCart["tomatoes"] - 1;
 });
 
