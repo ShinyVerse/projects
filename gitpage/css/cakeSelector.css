@@ -104,12 +104,15 @@ button {
     width: 200px;
     height: 300px;
     margin: auto;
+    background: white;
+    border: #e3edf0 2px solid;
   }
 img.item {
-    padding-left: calc(15%);
+    padding-left: calc(11%);
+    border: none;
 }
 .itemBubble {
-  margin-left: calc(40%);
+  margin-left: calc(35%);
   padding-left: 20px;
   padding-right: 10px;
 }
