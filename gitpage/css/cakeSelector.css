@@ -97,6 +97,7 @@ button {
   display: flex;
   flex-grow: 1;
   justify-content: space-around;
+  margin-bottom: 15px;
   }
 
   .item {
