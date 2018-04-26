@@ -86,6 +86,20 @@ h2 {
   display: block;
 }
 
+.projectsContainer p {
+  text-align: center;
+}
+
+.projectButton{
+  height: 100px;
+  width: 100px;
+}
+
+.projectButton {
+  margin-left: calc(50% - 50px);
+}
+
+
 /* Media Queries */
 
 @media screen and (min-width: 500px) {
@@ -111,6 +125,14 @@ h2 {
 
   .navItem:hover {
     border-top: 3px solid #cde5ec;
+  }
+
+  .projectsContainer{
+    width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
 }
