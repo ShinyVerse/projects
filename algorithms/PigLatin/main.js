@@ -6,8 +6,6 @@ function translatePigLatin(str) {
     }
     for (var i = 0; i < str.length; i++){
       if(! /[aeiou]/.test(str.charAt(i))){
-        console.log("const");
-        console.log(str.charAt(i));
         newArr.push(str.charAt(i));
       } else {
       break;
@@ -19,9 +17,6 @@ var result = slicedArr.concat(newArr).join("") + "ay";
 
 
 return result;
-  // if (str.charAt(0)
-  // var strArr = str.split("");
-//find out how many cons there are are start
 }
 
 // translatePigLatin("consonant");

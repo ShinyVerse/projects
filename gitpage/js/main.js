@@ -80,7 +80,7 @@ function check(result) {
         secondNum.push(result);
         calcScreen.innerHTML = secondNum.join("");
         second = parseInt(secondNum.join(""));
-        console.log(buttonPressed, first, second);
+        // console.log(buttonPressed, first, second);
       }
 
       break;
