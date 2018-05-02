@@ -290,7 +290,7 @@ img.item {
   height: 150px;
   width: 150px;
   margin: auto;
-  padding-left: calc(19%);
+  padding-left: calc(20%);
 }
 
 #cartSection{
@@ -434,6 +434,4 @@ img.item {
     flex-direction: row;
     justify-content: space-around;
   }
-
-
 }
