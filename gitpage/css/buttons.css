@@ -1,0 +1,14 @@
+.backToHome {
+  display: block;
+  background-image: url(../img/home.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+  z-index: 1000;
+  position: absolute;
+  top: 10px;
+  left:10px;
+}
