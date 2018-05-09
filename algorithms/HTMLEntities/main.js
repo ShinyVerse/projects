@@ -7,23 +7,23 @@ function convertHTML(str) {
   var regSingleQ = new RegExp(/[']/g);
   var regDoubleQ = new RegExp(/["]/g);
 if (regAnd.test(returnedStr)){
-  let newStr = returnedStr.replace(/[&]/g, '&amp');
+  let newStr = returnedStr.replace(/[&]/g, '&amp;');
   returnedStr = newStr;
 }
 if (regLArrow.test(returnedStr)){
-  let newStr = returnedStr.replace(/[<]/g, '&lt');
+  let newStr = returnedStr.replace(/[<]/g, '&lt;');
   returnedStr = newStr;
 }
 if (regRArrow.test(returnedStr)){
-  let newStr = returnedStr.replace(/[>]/g, '&gt');
+  let newStr = returnedStr.replace(/[>]/g, '&gt;');
   returnedStr = newStr;
 }
 if (regSingleQ.test(returnedStr)){
-  let newStr = returnedStr.replace(/[']/g, '&apos');
+  let newStr = returnedStr.replace(/[']/g, '&apos;');
   returnedStr = newStr;
 }
 if (regDoubleQ.test(returnedStr)){
-  let newStr = returnedStr.replace(/["]/g, '&quot');
+  let newStr = returnedStr.replace(/["]/g, '&quot;');
   returnedStr = newStr;
 }
 
@@ -32,5 +32,4 @@ if (regDoubleQ.test(returnedStr)){
 
 return returnedStr;
 }
-
 convertHTML("Dolce & & Gabbana");
