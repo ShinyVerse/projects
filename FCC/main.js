@@ -16,3 +16,11 @@ QButton.onclick = function(){
   QAuthor.innerHTML = "- " + JSONdata.author;
   callData();
 }
+
+
+$('#tweet').click(function(){
+                   window.open("https://twitter.com/intent/tweet?text=" + "\"" + $("#QSection").html()
+                              + "\" " + $("#QAuthor").html() );
+
+$("#QSection").html()
+               });

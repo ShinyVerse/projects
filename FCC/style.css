@@ -1,0 +1,20 @@
+
+body {
+  color: #e8e8e8;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  font-family: 'Tinos', serif;
+  padding-top: 20px;
+  background: #015980 url("./road.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.space-around{
+  padding: 30px 10px;
+  margin: 30px 10px;
+}
