@@ -8,6 +8,7 @@ var weatherPic = document.getElementById('weatherPic');
 var place = document.getElementById('place');
 var temp = document.getElementById('temp');
 var typeForm = document.getElementById('typeForm');
+var results = document.getElementById('results');
 
 goBut.onclick = function clicker(){
   checker(userInput.value);
@@ -16,6 +17,8 @@ goBut.onclick = function clicker(){
 
 function checker(id){
   if(id.match(/^[0-9a-zA-Z,]{1,16}$/)){
+    weatherPic.setAttribute("class", "activeWeather");
+    results.setAttribute("class", "activeWeather");
     $.getJSON('https://api.openweathermap.org/data/2.5/weather?q='+ id + weatherAPI, function(data) {
       JSONdata = data;
       // console.log(data.weather[0].icon);

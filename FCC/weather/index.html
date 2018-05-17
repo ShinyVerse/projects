@@ -3,21 +3,33 @@
   <head>
     <meta charset="UTF-8">
     <title>title</title>
-     <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style.css">
   </head>
   <body>
 
     <input id="userInput" placeholder="Type a City"></input>
     <form action="">
-      <input type="radio" checked="true" name="showTemp" value="celsius" id="celsius">Celsius<br>
-      <input type="radio" name="showTemp" value="fahrenheit" id="fahrenheit">Fahrenheit<br>
-    </form>
+      <div class="radio">
+        <input type="radio"id="celsius" name="showTemp" value="celsius" checked="true"/>
+           <label for="celsius"><span></span>Celsius</label>
+      </div>
+      <div class="radio">
+        <input type="radio" name="showTemp" value="fahrenheit" id="fahrenheit"/>
+           <label for="fahrenheit"><span></span>Fahrenheit</label>
+      </div>
 
-    <button id="goBut">Go</button>
-    <h3 id='place'></h3>
-    <h4 id='temp'></h4>
-    <img src="img/03d.png" alt="weatherImg" id="weatherPic">
-    <h4></h4>
+
+    </form>
+    <button id="goBut"class="fab fa-searchengin"></button>
+
+
+    <div id="results">
+      <h3 id='place'></h3>
+      <h4 id='temp'></h4>
+      <img src="img/03d.png" alt="weatherImg" id="weatherPic">
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
