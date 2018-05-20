@@ -4,10 +4,50 @@ html {
   width: 100%;
   height:100%;
 }
+ul {
+  list-style: none;
+}
+a {
+  color: black;
+  padding: 3px;
+  text-decoration: none;
+  border: 1px black solid;
+  border-bottom: 2.5px black solid;
+}
+
 
 body{
   font-family:'Carrois Gothic SC', sans-serif;
   text-align: center;
-  background:url("https://github.com/ShinyVerse/projects/blob/master/codepenImg/DS/bg.jpg?raw=true") no-repeat;
-  background-size: cover;
+  background:url("https://github.com/ShinyVerse/projects/blob/master/codepenImg/DS/bg.jpg?raw=true") repeat;
+  background-size: contain;
+}
+
+.mainContainer{
+  font-size: 1.2em;
+  margin: auto;
+  width: 40%;
+}
+.imgs {
+  width: 80%;
+  border: black 2px solid;
+}
+.listCon{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.listConItem{
+  max-width: 30%;
+  padding: 10px;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 950px) {
+    body {
+        background-size: cover;
+    }
 }
