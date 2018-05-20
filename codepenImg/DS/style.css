@@ -19,8 +19,8 @@ a {
 body{
   font-family:'Carrois Gothic SC', sans-serif;
   text-align: center;
-  background:url("https://github.com/ShinyVerse/projects/blob/master/codepenImg/DS/bgcopy.jpg?raw=true") repeat;
-  background-size: contain;
+  background:url("https://github.com/ShinyVerse/projects/blob/master/codepenImg/DS/bgcopy.jpg?raw=true") no-repeat;
+  background-size: stretch;
 }
 
 .mainContainer{
@@ -44,6 +44,10 @@ body{
   max-width: 30%;
   padding: 10px;
   display: inline-block;
+}
+.imgGalItem{
+  width: 400px;
+  height: 300px;
 }
 
 @media only screen and (min-width: 950px) {
