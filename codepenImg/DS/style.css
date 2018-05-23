@@ -19,8 +19,43 @@ a {
 body{
   font-family:'Carrois Gothic SC', sans-serif;
   text-align: center;
-  background:url("https://github.com/ShinyVerse/projects/blob/master/codepenImg/DS/bgcopy.jpg?raw=true") no-repeat;
-  background-size: stretch;
+  background:url("https://github.com/ShinyVerse/projects/blob/master/codepenImg/DS/bgbg.jpg?raw=true") repeat;
+}
+
+.mainContainer{
+  margin: auto;
+  font-size: 0.8em;
+  width: 90%;
+}
+.imgs {
+  width: 80%;
+  border: black 2px solid;
+}
+.listCon{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.listConItem{
+  max-width: 30%;
+  padding: 10px;
+  display: inline-block;
+}
+.imgGalItem{
+  width: 400px;
+  height: 300px;
+}
+
+@media only screen and (min-width: 950px) {
+
+body{
+  font-family:'Carrois Gothic SC', sans-serif;
+  text-align: center;
+  background:url("https://github.com/ShinyVerse/projects/blob/master/codepenImg/DS/bgcopy.jpg?raw=true") repeat;
+  background-size: contain;
 }
 
 .mainContainer{
@@ -49,9 +84,5 @@ body{
   width: 400px;
   height: 300px;
 }
-
-@media only screen and (min-width: 950px) {
-    body {
-        background-size: cover;
-    }
+}
 }
