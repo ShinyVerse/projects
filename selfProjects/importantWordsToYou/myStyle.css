@@ -18,7 +18,7 @@ h1 {
 body {
   background-image: url("img/purple.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: stretch;
 }
 
 /************* Word Selection Div *************/
@@ -66,6 +66,9 @@ li {
   li {
     padding: 2px 15px;
     margin: 15px 5px;
+  }
+  body{
+      background-size: cover;
   }
 }
 
