@@ -2,6 +2,7 @@
 function binaryAgent(str) {
   var binArr = str.split(" ");
   var charArr = [];
+  var newStr = [];
    for (var j = 0; j< binArr.length; j++){
      var given = binArr[j].split("");
      charArr.push(taken(given));
@@ -26,12 +27,11 @@ function binaryAgent(str) {
 
    console.log(charArr);
 
+   for (var g = 0; g < charArr.length; g++){
+     newStr.push(String.fromCharCode(charArr[g]));
+   }
+   return newStr.join("");
 }
-
-// var mynum = "01000001";
-// var given = mynum.split("");
-
-
 
 
 
