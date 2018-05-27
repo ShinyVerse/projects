@@ -31,7 +31,7 @@ function animalSays(arr){
 function findRemainder(num, divNum, count){
  let counter = count || 0;
  if (num % divNum === 0) {
-   console.log("this number can be divided between 3 with " + counter + "remainder");
+   console.log("this number can be divided between 3 with " + counter + " remainder");
  } else {
    counter++
    findRemainder(num - 1, divNum, counter );
