@@ -44,19 +44,36 @@ function addTogether() {
 addTogether("rabbit");
 
 
-// CLOSURE 
+// CLOSURE
 //
-// function close(){
-//   var a = arguments[0];
-//   return function(b){
-//     return a + b;
-//   }
-// }
+function close(){
+  var a = arguments[0];
+  return function(b){
+    return a + b;
+  }
+}
 //
 
+function close(){
+  var password = "bob";
+  return function(b){
+    if (b === password){
+      console.log("You're signed in");
+    } else {
+      console.log("incorrect password");
+    }
+  }
+}
 
 
 
+var b;
+
+function thisThat(a){
+console.log(a);
+}
+thisThat(a);
+ var a = 9;
 
 
 //
