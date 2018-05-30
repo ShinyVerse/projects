@@ -27,9 +27,14 @@ function check(keyed) {
     case "7":
     case "8":
     case "9":
+
     numArr.push(keyed);
     if(fresh){
+      calcScreen.innerHTML = numArr.join("");
       fresh = false;
+    } else {
+      let tempNum = numArr.join("");
+      calcScreen.innerHTML =  fullArr.join("") + tempNum;
     }
       break;
     case "÷":
@@ -39,7 +44,7 @@ function check(keyed) {
       fullArr.push("/")
       numArr = [];
       num = null;
-      console.log(fullArr);
+      calcScreen.innerHTML = fullArr.join("");
     }
       break;
     case "x":
@@ -49,7 +54,7 @@ function check(keyed) {
       fullArr.push("*")
       numArr = [];
       num = null;
-      console.log(fullArr);
+      calcScreen.innerHTML = fullArr.join("");
     }
       break;
     case "-":
@@ -59,7 +64,7 @@ function check(keyed) {
       fullArr.push("-")
       numArr = [];
       num = null;
-      console.log(fullArr);
+      calcScreen.innerHTML = fullArr.join("");
     }
       break;
     case "+":
@@ -69,7 +74,7 @@ function check(keyed) {
       fullArr.push("+")
       numArr = [];
       num = null;
-      console.log(fullArr);
+      calcScreen.innerHTML = fullArr.join("");
     }
       break;
     case "C":
@@ -80,6 +85,7 @@ function check(keyed) {
    mainResult = 0;
     fresh = true;
     mainRezFlag = false;
+    calcScreen.innerHTML = " ";
     console.log(fullArr);
       break;
     case "=":
@@ -97,6 +103,7 @@ function check(keyed) {
     numArr = [];
     numArr.push(mainResult);
     mainResult = 0;
+    calcScreen.innerHTML = numArr.join("");
       break;
     default:
   }
@@ -110,7 +117,6 @@ function calcAll(arr, extra, flag){
       let pressed = arr[i];
       let a = extra;
       let b = parseFloat(arr[i+1]);
-      console.log("extra = " + extra);
       let result = operatorChecker(a,b, pressed);
       let newArr = arr.slice(2);
       if (newArr.length > 1){
