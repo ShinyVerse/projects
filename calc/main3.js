@@ -9,6 +9,7 @@ var num = null;
 var mainResult = 0;
 var fresh = true;
 var mainRezFlag = false;
+var expectingSymb = false;
 
 calcCase.onclick = function() {
   // alert(event.target.innerHTML);
@@ -27,7 +28,15 @@ function check(keyed) {
     case "7":
     case "8":
     case "9":
-
+    if (expectingSymb){
+      Array.prototype.map.call(symbols, function(symbol) {
+        symbol.classList.add("symbolError");
+        setTimeout(function() {
+          symbol.classList.remove("symbolError")
+        }, 500);
+      });
+      break;
+    }
     numArr.push(keyed);
     if(fresh){
       calcScreen.innerHTML = numArr.join("");
@@ -35,9 +44,13 @@ function check(keyed) {
     } else {
       let tempNum = numArr.join("");
       calcScreen.innerHTML =  fullArr.join("") + tempNum;
+
     }
       break;
     case "÷":
+    if (expectingSymb){
+      expectingSymb = false;
+    }
     if (!fresh){
       num = numArr.join("");
       fullArr.push(num);
@@ -48,6 +61,9 @@ function check(keyed) {
     }
       break;
     case "x":
+    if (expectingSymb){
+      expectingSymb = false;
+    }
     if (!fresh){
       num = numArr.join("");
       fullArr.push(num);
@@ -58,6 +74,9 @@ function check(keyed) {
     }
       break;
     case "-":
+    if (expectingSymb){
+      expectingSymb = false;
+    }
     if (!fresh){
       num = numArr.join("");
       fullArr.push(num);
@@ -68,6 +87,9 @@ function check(keyed) {
     }
       break;
     case "+":
+    if (expectingSymb){
+      expectingSymb = false;
+    }
     if (!fresh){
       num = numArr.join("");
       fullArr.push(num);
@@ -86,6 +108,7 @@ function check(keyed) {
     fresh = true;
     mainRezFlag = false;
     calcScreen.innerHTML = " ";
+    expectingSymb = false;
     console.log(fullArr);
       break;
     case "=":
@@ -103,6 +126,7 @@ function check(keyed) {
     numArr = [];
     numArr.push(mainResult);
     mainResult = 0;
+    expectingSymb = true;
     calcScreen.innerHTML = numArr.join("");
       break;
     default:
