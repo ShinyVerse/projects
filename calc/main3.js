@@ -1,6 +1,8 @@
-var calcScreen = document.getElementById("calcScreen");
+
 var calcCase = document.getElementById("calculatorCase");
 var symbols = document.getElementsByClassName("symbol");
+var calcScreen = document.getElementById("calcScreen1");
+var calcScreen = document.getElementById("calcScreen2");
 
 var fullArr = [];
 var numArr = [];
@@ -39,11 +41,11 @@ function check(keyed) {
     }
     numArr.push(keyed);
     if(fresh){
-      calcScreen.innerHTML = numArr.join("");
+      calcScreen2.innerHTML = numArr.join("");
       fresh = false;
     } else {
       let tempNum = numArr.join("");
-      calcScreen.innerHTML =  fullArr.join("") + tempNum;
+      calcScreen2.innerHTML =  fullArr.join("") + tempNum;
 
     }
       break;
@@ -57,7 +59,7 @@ function check(keyed) {
       fullArr.push("/")
       numArr = [];
       num = null;
-      calcScreen.innerHTML = fullArr.join("");
+      calcScreen2.innerHTML = fullArr.join("");
     }
       break;
     case "x":
@@ -70,7 +72,7 @@ function check(keyed) {
       fullArr.push("*")
       numArr = [];
       num = null;
-      calcScreen.innerHTML = fullArr.join("");
+      calcScreen2.innerHTML = fullArr.join("");
     }
       break;
     case "-":
@@ -83,7 +85,7 @@ function check(keyed) {
       fullArr.push("-")
       numArr = [];
       num = null;
-      calcScreen.innerHTML = fullArr.join("");
+      calcScreen2.innerHTML = fullArr.join("");
     }
       break;
     case "+":
@@ -96,7 +98,7 @@ function check(keyed) {
       fullArr.push("+")
       numArr = [];
       num = null;
-      calcScreen.innerHTML = fullArr.join("");
+      calcScreen2.innerHTML = fullArr.join("");
     }
       break;
     case "C":
@@ -107,7 +109,8 @@ function check(keyed) {
    mainResult = 0;
     fresh = true;
     mainRezFlag = false;
-    calcScreen.innerHTML = " ";
+    calcScreen2.innerHTML = " ";
+    calcScreen1.innerHTML = " ";
     expectingSymb = false;
     console.log(fullArr);
       break;
@@ -119,7 +122,6 @@ function check(keyed) {
     num = null;
     if (!fresh && fullArr.length > 2){
       calcAll(fullArr, 0, false);
-
     }
     fullArr = [];
     num = null;
@@ -127,7 +129,8 @@ function check(keyed) {
     numArr.push(mainResult);
     mainResult = 0;
     expectingSymb = true;
-    calcScreen.innerHTML = numArr.join("");
+    calcScreen1.innerHTML = numArr.join("");
+    calcScreen2.innerHTML = numArr.join("");
       break;
     default:
   }
@@ -159,6 +162,7 @@ function calcAll(arr, extra, flag){
       if (newArr.length > 1){
         calcAll(newArr, result, true);
       }  else {
+        calcScreen1.innerHTML = result;
         return mainResult = result;
       }
     }

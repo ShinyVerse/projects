@@ -1,6 +1,8 @@
 var calcScreen = document.getElementById("calcScreen");
 var calcCase = document.getElementById("calculatorCase");
 var symbols = document.getElementsByClassName("symbol");
+var calcScreen = document.getElementById("calcScreen1");
+var calcScreen = document.getElementById("calcScreen2");
 
 var firstNum = [];
 var secondNum = [];
