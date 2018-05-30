@@ -12,6 +12,7 @@ var mainResult = 0;
 var fresh = true;
 var mainRezFlag = false;
 var expectingSymb = false;
+var expectingNum = true;
 
 calcCase.onclick = function() {
   // alert(event.target.innerHTML);
@@ -43,33 +44,44 @@ function check(keyed) {
     if(fresh){
       calcScreen2.innerHTML = numArr.join("");
       fresh = false;
+      expectingNum = false;
     } else {
       let tempNum = numArr.join("");
       calcScreen2.innerHTML =  fullArr.join("") + tempNum;
-
+      expectingNum = false;
     }
       break;
     case "÷":
+
     if (expectingSymb){
       expectingSymb = false;
     }
     if (!fresh){
+      if (expectingNum){
+        break;
+      }
       num = numArr.join("");
       fullArr.push(num);
-      fullArr.push("/")
+      fullArr.push("/");
+      expectingNum = true;
       numArr = [];
       num = null;
       calcScreen2.innerHTML = fullArr.join("");
     }
       break;
     case "x":
+
     if (expectingSymb){
       expectingSymb = false;
     }
     if (!fresh){
+      if (expectingNum){
+        break;
+      }
       num = numArr.join("");
       fullArr.push(num);
-      fullArr.push("*")
+      fullArr.push("*");
+      expectingNum = true;
       numArr = [];
       num = null;
       calcScreen2.innerHTML = fullArr.join("");
@@ -80,22 +92,32 @@ function check(keyed) {
       expectingSymb = false;
     }
     if (!fresh){
+      if (expectingNum){
+        break;
+      }
       num = numArr.join("");
       fullArr.push(num);
-      fullArr.push("-")
+      fullArr.push("-");
+      expectingNum = true;
       numArr = [];
       num = null;
       calcScreen2.innerHTML = fullArr.join("");
     }
       break;
     case "+":
+
     if (expectingSymb){
       expectingSymb = false;
     }
     if (!fresh){
+      if (expectingNum){
+        break;
+      }
       num = numArr.join("");
       fullArr.push(num);
-      fullArr.push("+")
+
+      fullArr.push("+");
+      expectingNum = true;
       numArr = [];
       num = null;
       calcScreen2.innerHTML = fullArr.join("");
