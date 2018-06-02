@@ -3,6 +3,7 @@ var symbols = document.getElementsByClassName("symbol");
 var calcScreen = document.getElementById("calcScreen1");
 var calcScreen = document.getElementById("calcScreen2");
 
+
 var fullArr = [];
 var numArr = [];
 var sym = "";
@@ -30,35 +31,34 @@ function check(keyed) {
     case "7":
     case "8":
     case "9":
-      if (numArr[numArr.length - 1] === "0") {
-        break;
-      }
-      if (expectingSymb) {
-        Array.prototype.map.call(symbols, function(symbol) {
-          symbol.classList.add("symbolError");
-          setTimeout(function() {
-            symbol.classList.remove("symbolError")
-          }, 500);
-        });
-        break;
-      }
-      numArr.push(keyed);
-      if (fresh) {
-        calcScreen2.innerHTML = numArr.join("");
-        fresh = false;
-        expectingNum = false;
-      } else {
-        let tempNum = numArr.join("");
-        calcScreen2.innerHTML = fullArr.join("") + tempNum;
-        expectingNum = false;
-      }
-      break;
-    case ".":
-
-    if (numArr[numArr.length-2] === "."){
+    if (numArr[numArr.length-1] === "0"){
+    break;
+  }
+    if (expectingSymb){
+      Array.prototype.map.call(symbols, function(symbol) {
+        symbol.classList.add("symbolError");
+        setTimeout(function() {
+          symbol.classList.remove("symbolError")
+        }, 500);
+      });
       break;
     }
-    let num2test = parseInt(numArr[numArr.length-1]);
+    numArr.push(keyed);
+    if(fresh){
+      calcScreen2.innerHTML = numArr.join("");
+      fresh = false;
+      expectingNum = false;
+    } else {
+      let tempNum = numArr.join("");
+      calcScreen2.innerHTML =  fullArr.join("") + tempNum;
+      expectingNum = false;
+    }
+      break;
+    case ".":
+        if (numArr[numArr.length-2] === "."){
+      break;
+    }
+     let num2test = parseInt(numArr[numArr.length-1]);
     let tester = new RegExp(/[0-9]/);;
     let result = tester.test(num2test);
       // let checkLastInput = parseInt(numArr[numArr.length-1]);
@@ -73,7 +73,8 @@ function check(keyed) {
       }
       break;
     case "÷":
-      if (expectingSymb) {
+
+        if (expectingSymb) {
         expectingSymb = false;
       }
       if (!fresh) {
@@ -156,82 +157,73 @@ function check(keyed) {
       }
       break;
     case "C":
-      fullArr = [];
-      numArr = [];
-      sym = "";
-      num = null;
-      mainResult = 0;
-      fresh = true;
-      mainRezFlag = false;
-      calcScreen2.innerHTML = " ";
-      calcScreen1.innerHTML = " ";
-      expectingSymb = false;
-      console.log(fullArr);
+     fullArr = [];
+     numArr = [];
+     sym = "";
+     num = null;
+   mainResult = 0;
+    fresh = true;
+    mainRezFlag = false;
+    calcScreen2.innerHTML = 0;
+    calcScreen1.innerHTML = 0;
+    expectingSymb = false;
+
       break;
     case "=":
-    if(expectingNum){
-      break;
+    num = numArr.join("");
+    fullArr.push(num);
+    console.log("fullArr before = " +fullArr);
+    numArr = [];
+    num = null;
+    if (!fresh && fullArr.length > 2){
+      calcAll(fullArr, 0, false);
     }
-      num = numArr.join("");
-      fullArr.push(num);
-      console.log("fullArr before = " + fullArr);
-      numArr = [];
-      num = null;
-      if (!fresh && fullArr.length > 2) {
-        calcAll(fullArr, 0, false);
-      }
-      fullArr = [];
-      num = null;
-      numArr = [];
-      numArr.push(mainResult);
-      mainResult = 0;
-      expectingSymb = true;
-      calcScreen1.innerHTML = numArr.join("");
-      calcScreen2.innerHTML = numArr.join("");
+    fullArr = [];
+    num = null;
+    numArr = [];
+    numArr.push(mainResult);
+    mainResult = 0;
+    expectingSymb = true;
+    calcScreen1.innerHTML = numArr.join("");
+    calcScreen2.innerHTML = numArr.join("");
       break;
     default:
   }
 
 }
 
-function calcAll(arr, extra, flag) {
+function calcAll(arr, extra, flag){
   var main = 0;
-  for (var i = 0; i < 2; i++) {
-    if (extra > 0 || extra < 0 || extra === 0 && flag === true) {
+  for (var i = 0; i < 2; i++){
+    if (extra > 0 || extra < 0 || extra === 0 && flag === true  ){
       let pressed = arr[i];
       let a = extra;
-      let b = parseFloat(arr[i + 1]);
-      let result = operatorChecker(a, b, pressed);
+      let b = parseFloat(arr[i+1]);
+      let result = operatorChecker(a,b, pressed);
       let newArr = arr.slice(2);
-      if (newArr.length > 1) {
+      if (newArr.length > 1){
         calcAll(newArr, result, true);
       } else {
-        if (result % 1 === 0){
-          calcScreen1.innerHTML = result;
-          return mainResult = result;
-        } else {
-          calcScreen1.innerHTML = result.toFixed(2);
-          return mainResult = result.toFixed(2);
+        if ( result.length > 6){
+          return mainResult = result.toFixed(4);
         }
+        return mainResult = result;
       }
     }
-    if (extra === 0 && flag !== true) {
-      let pressed = arr[i + 1];
+    if (extra === 0 && flag !== true){
+      let pressed = arr[i+1];
       let a = parseFloat(arr[i]);
-      let b = parseFloat(arr[i + 2]);
-      let result = operatorChecker(a, b, pressed);
+      let b = parseFloat(arr[i+2]);
+      let result = operatorChecker(a,b, pressed);
       let newArr = arr.slice(3);
-      if (newArr.length > 1) {
+      if (newArr.length > 1){
         calcAll(newArr, result, true);
-      } else {
-        if (result % 1 === 0){
-          calcScreen1.innerHTML = result;
-          return mainResult = result;
-        } else {
-          calcScreen1.innerHTML = result.toFixed(2);
-          return mainResult = result.toFixed(2);
+      }  else {
+          if ( result.length > 6){
+          return mainResult = result.toFixed(4);
         }
-
+        calcScreen1.innerHTML = result;
+        return mainResult = result;
       }
     }
 
@@ -239,15 +231,15 @@ function calcAll(arr, extra, flag) {
   return;
 }
 
-function operatorChecker(a, b, pressed) {
-  switch (pressed) {
-    case "*":
+function operatorChecker(a, b, pressed){
+    switch (pressed) {
+      case "*":
       return a * b;
-    case "+":
+      case "+":
       return a + b;
-    case "-":
+      case "-":
       return a - b;
-    case "/":
+      case "/":
       return a / b;
   }
 }
