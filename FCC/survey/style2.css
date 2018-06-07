@@ -8,8 +8,7 @@ main {
   width: 90%;
   height: 100%;
   margin: auto;
-  padding: 25px;
-  border-radius: 10px;
+  padding: 10px;
   text-decoration: none;
   list-style: none;
   font-size: 1.1em;
@@ -35,7 +34,7 @@ h1, #description {
 p {
   margin-top: 10px;
   padding-top: 10px;
-  border-top: 2px solid grey;
+  border-top: 2px solid black;
 }
 
 #dropdown {
@@ -68,6 +67,13 @@ button {
   border-radius: 5px;
   margin: 10px 0px 0px calc(9%);
 }
+.error {
+  border: tomato solid 2px;
+}
+.complete {
+  border: green solid 2px;
+}
+
 
 @media only screen and (min-width: 400px) {
     button {
@@ -115,10 +121,5 @@ button {
   main{
     width: 50%;
   }
-  button {
-    margin-left: 40%;
-  }
-  #radio-choices {
-      margin-left: 36%;
-    }
+
 }
