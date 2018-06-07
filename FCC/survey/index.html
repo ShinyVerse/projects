@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Survey</title>
+</head>
+
+<body>
+  <main>
+        <h1 id="title">Favourite Cake Survey</h1>
+    <p id="description">Enter your favourite cake into our database. Research purposes only. </p>
+
+    <form id="survey-form">
+ <div id="details">
+     <label for="name" id="name-label"> Name: <input required="true" autocomplete='name' placeholder="Enter name here..." type="text" id="name"></label><br>
+      <label for="number" id="number-label">Age: <input min="1" max="115" placeholder="Enter age here..." type="number" id="number"></label><br>
+      <label for="email" id="email-label">E-mail: <input required="true" autocomplete='name' placeholder="Enter e-mail here..." type="email" id="email"></label><br>
+  </div>
+      <p>The perfect sponge flavour is: </p>
+      <select id="dropdown">
+        <option value="chocolate">Chocolate</option>
+        <option value="vanilla">Vanilla</option>
+        <option value="lemon">Lemon</option>
+      </select>
+      <p>Which do you identify with most?</p>
+      <div id="radio-choices">
+        <input type="radio" id="gender-choice-fem" name="gender" value="female">
+        <label for="gender-choice-fem">Female</label>
+        <input type="radio" id="gender-choice-male" name="gender" value="male">
+        <label for="gender-choice-male">Male</label>
+        <input type="radio" id="gender-choice-other" name="gender" value="other">
+        <label for="gender-choice-other">Other</label>
+      </div>
+  <p>Must haves for perfect cakes are:</p>
+      <div id="ingred-checkboxes">
+        <input class="ingred-item" type="checkbox" name="cake-ingred" id="sprinkles-check" value="sprinkles"><label for="sprinkles-check">Sprinkles</label><br>
+        <input class="ingred-item"  type="checkbox" name="cake-ingred" id="jam-check" value="jam"><label for="jam-check">Jam</label><br>
+        <input class="ingred-item" type="checkbox" name="cake-ingred" id="nutella-check" value="nutella"><label for="nutella-check">Nutella</label><br>
+        <input class="ingred-item" type="checkbox" name="cake-ingred" id="fruit-check" value="fruit"><label for="fruit-check">Fruit</label><br>
+        <input class="ingred-item" type="checkbox" name="cake-ingred" id="cookies-check" value="cookies"><label for="cookies-check">Cookies</label><br>
+        <input class="ingred-item" type="checkbox" name="cake-ingred" id="sweets-check" value="sweets"><label for="sweets-check">Sweets</label><br>
+        <input class="ingred-item" type="checkbox" name="cake-ingred" id="chocolate-check" value="chocolate"><label for="chocolate-check">Chocolate</label><br>
+        <input class="ingred-item" type="checkbox" name="cake-ingred" id="icing-check" value="icing"><label for="icing-check">Icing</label><br>
+      </div>
+  <textarea cols="30" rows="5" id="textarea">
+  </textarea>
+      <button type="submit" id="submit">Submit My Cake!</button>
+    </form>
+  </main>
+
+</body>
+
+</html>
