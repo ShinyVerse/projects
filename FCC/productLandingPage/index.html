@@ -17,7 +17,7 @@
       <nav id="nav-bar">
         <ul>
           <li><a class="nav-link" href="#about-us">About Us</a></li>
-          <li><a class="nav-link" href="#animal-section">Meet The Animals</a></li>
+          <li><a class="nav-link" href="#animal-section">Our Animals</a></li>
           <li><a class="nav-link" href="#price-section">Pricing</a></li>
         </ul>
       </nav>
@@ -35,32 +35,38 @@
           src="https://www.youtube.com/embed/61vIB1eflOc">
         </iframe>
 
-        <h1>Meet The Animals:</h1>
+
         <div id="animal-section">
+          <h1>Meet The Animals:</h1>
           <img src="https://github.com/ShinyVerse/projects/blob/master/codepenImg/animals/goat.jpg?raw=true" alt="goat"/>
-          <figcaption>Friendly goats, very playful and you can learn to milk!</figcaption>
+          <figcaption class="animal-img">Friendly goats, very playful and you can learn to milk!</figcaption>
           <img src="https://github.com/ShinyVerse/projects/blob/master/codepenImg/animals/sheep.jpg?raw=true" alt="sheep"/>
-          <figcaption>Our lambs will have you forgetting your worries in no time.</figcaption>
+          <figcaption class="animal-img">Our lambs will have you forgetting your worries in no time.</figcaption>
           <img src="https://github.com/ShinyVerse/projects/blob/master/codepenImg/animals/horses.jpeg?raw=true" alt="horses"/>
-          <figcaption>Learn how to take care of a horse and to ride if you're up for it!</figcaption>
+          <figcaption class="animal-img">Learn how to take care of a horse and to ride if you're up for it!</figcaption>
           <img src="https://github.com/ShinyVerse/projects/blob/master/codepenImg/animals/chickens.jpeg?raw=true" alt="chickens"/>
-          <figcaption>The chickens live in our trees, we don't know why, they just love it that way.</figcaption>
+          <figcaption class="animal-img">The chickens live in our trees, we don't know why, they just love it that way.</figcaption>
           <img src="https://github.com/ShinyVerse/projects/blob/master/codepenImg/animals/cows.jpg?raw=true" alt="cows"/>
-          <figcaption>Learn to milk a cow and all about their needs and uses</figcaption>
+          <figcaption class="animal-img">Learn to milk a cow and all about their needs and uses</figcaption>
         </div>
 
-        <h1>Prices:</h1>
+
         <div id="price-section">
+          <h1>Prices:</h1>
           <p>Rates shown includes bed for the night and two meals provided</p>
           <ul>
             <li>Weekend rate: £75pp a day</li>
             <li>Week day rate: £40pp a day</li>
           </ul>
         </div>
-        <form class="">
-          <input type="email" placeholder="enter email here">
-          <input type="submit" value="Submit">
-        </form>
+        <h1>Subscribe to our newsletters and updates:</h1>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <div id="subscribe-section">
+            <input name="email" id="email" type="email" placeholder="Enter your email address" required/>
+            <input id="submit" type="submit" value="Subscribe!" class="btn"></input>
+          </div>
+
+    </form>
 
       <script type="text/javascript" src="main.js">
 
