@@ -1,8 +1,35 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Catamaran', sans-serif;
+}
+
+html {
+  background: white;
+}
+body {
+  background: hsla(96, 96%, 23%, 0.25);
+}
+
+
 main {
   width: 100%;
   height: 100%;
   font-size: 1.4em;
   text-align: center;
+  padding-top: 100px;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 0px 5px 0px;
+  border-bottom: 2px black solid;
+  color: #c94716;
 }
 
 #header-img {
@@ -12,16 +39,37 @@ main {
   border-radius: 50%;
 }
 nav {
-  background: pink;
-  width: 100%;
+  width:100%;
+  height: 11.5%;
+  position: fixed;
+  top: 0;
+  left:0;
+  background: white;
+}
+ul {
+  padding: 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
 nav li {
+  line-height: 1.1em;
+  font-size: 0.8em;
   width: 80%;
   list-style: none;
   text-align: center;
-  border-bottom: 2px red solid;
+  border-bottom: 2px  hsla(309, 100%, 87%, 1) solid;
 }
+p {
+  padding: 10px;
+
+  line-height: 1.2em;
+}
+ #nav-bar li {
+   width: 32%;
+   justify-content: center;
+ }
 a {
     text-decoration: none;
     color: black;
@@ -32,9 +80,14 @@ a {
  #about-us {
    font-size: 0.8em;
  }
+ #animal-section img {
+   width: 200px;
+   height: 150px;
+   border: hsla(309, 100%, 87%, 1) 3px solid;
+ }
 
 #video {
-  width: 100%;
+  width: 90%;
   height: 75%;
   margin: auto;
 }
