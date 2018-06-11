@@ -78,7 +78,7 @@ a {
    margin: 5px 0px 5px 0px;
    font-size: 1.2em;
    text-decoration: underline;
-   text-decoration-color: hsla(329, 100%, 50%, 1);
+   text-decoration-color: hsla(329, 100%, 65%, 1);
  }
  #about-us {
    font-size: 0.8em;
@@ -87,6 +87,7 @@ a {
    width: 200px;
    height: 150px;
    border: hsla(309, 100%, 87%, 1) 2px solid;
+   border-radius: 4px;
  }
 .animal-img{
  padding: 0px;
