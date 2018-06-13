@@ -104,6 +104,21 @@ a {
   margin: auto;
 }
 
+#price-section li {
+  border: black solid 1px;
+  margin: 1%;
+}
+
+.book-it {
+  width: 80%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 0.7em;
+  background: green;
+  color: white;
+  outline: none;
+}
+
 #subscribe-section{
   margin: auto;
   width: 100%;
@@ -120,7 +135,7 @@ a {
   margin-left: -10px;
   border-top-right-radius: 10px;
   border-bottom-right-radius:10px;
-  background: hsla(329, 100%, 40%, 1);
+  background:hsla(329, 100%, 65%, 1);
 }
 
 @media only screen and (min-width: 500px) {
@@ -132,4 +147,35 @@ a {
       width: 400px;
       height: 250px;
     }
+}
+
+@media only screen and (min-width: 700px) {
+  nav {
+    height: 7.5%;
+  }
+  main {
+    padding-top: 55px;
+  }
+  #animal-section {
+    width: 100%;
+  }
+  figure {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 70%;
+    display: flex;
+  }
+  figure img {
+      vertical-align: top;
+  }
+  figure .animal-img {
+    padding: 40px 0px 0px 10px;
+      text-align: center;
+  }
+  #price-section li{
+    width: 30%;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding: 10px;
+  }
 }
