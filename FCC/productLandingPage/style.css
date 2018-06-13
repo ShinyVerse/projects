@@ -146,6 +146,7 @@ a {
     #video {
       width: 400px;
       height: 250px;
+      margin: auto;
     }
 }
 
@@ -162,14 +163,17 @@ a {
   figure {
     margin: auto;
     margin-bottom: 10px;
-    width: 70%;
+    width: 80%;
     display: flex;
   }
-  figure img {
+
+#animal-section img {
+      width: 250px;
       vertical-align: top;
+      border:  hsla(309, 100%, 87%, 1) 1px solid;
   }
   figure .animal-img {
-    padding: 40px 0px 0px 10px;
+    padding: 25px 0px 0px 10px;
       text-align: center;
   }
   #price-section li{
@@ -177,5 +181,49 @@ a {
     margin-right: 25px;
     margin-left: 25px;
     padding: 10px;
+  }
+  #email {
+    width: 35%;
+  }
+  #submit {
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .figure-container {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #animal-section img  {
+    width: 200px;
+  }
+
+  figure  {
+    width:45%;
+  }
+  /* remove if adding in more images!! */
+  .figure-last-item {
+    width: 45%;
+    margin: 5px 0px 0px 25px;
+  }
+  .figure-last-item {
+    display: flex;
+  }
+  /* //////until here */
+
+  #animal-section img  {
+    width: 200px;
+  }
+  #price-section li{
+    width: 25%;
+    padding: 6% 2% 2% 2%;
+  }
+  #email {
+    width: 25%;
+  }
+  #submit {
+    width: 10%;
   }
 }
