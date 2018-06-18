@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tech Docs</title>
+  <link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <header id="nav-header">Helper Javascript Guide</header>
+    <ul>
+      <li><a href="#Javascript_Dictionary" class="nav-link">Javascript Dictionary</a></li>
+      <li><a href="#Nested_For_Loops" class="nav-link">Nested For Loops</a></li>
+      <li><a href="#Recursion" class="nav-link">Recursion</a></li>
+      <li><a href="#Arguments" class="nav-link">Arguments</a></li>
+      <li><a href="#Tips" class="nav-link">Tips</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Javascript_Dictionary">
+      <header>Javascript Dictionary</header>
+      <h2>Introduction</h2>
+     <p>I wanted to include these because I was late to the game on using some of them and they are mega helpful...in my opinion</p>
+      <h3>The basic gist:</h3>
+      <p>You want to log a collection which can be added to and grow at any time. (While the code is in use that is.)</p>
+      <h3>The Set Up:</h3>
+      <p>You are making an <strong>object</strong> and either creating a new item or updating an existing one.</p>
+
+      <div class="example_code">
+        <code>
+          var dictionary = {};
+        </code>
+      </div>
+          <p>Then adding what you want to it:</p>
+          <div class="example_code">
+            <code>
+              dictionary.anyItemHere = "some kind of entry."; <br>
+              <strong>OR</strong><br> dictionary[9] = 1;<br>
+              <strong>OR</strong><br> dictionary["nine"] = 8;<br>
+            </code>
+          </div>
+
+          <h3>Updating Dictionary Example:</h3>
+          <div class="example_code">
+            <code >
+              if (dictionary[9] > 0){ <br> dictionary[9] = dictionary[9] + 1 <br> }
+            </code>
+          </div>
+
+
+          <h3>Uses:</h3> Good for iterating through lists and returning a count.
+          <div class="example_code">
+            <code >
+              dictionary[number/entry] = dictionary[number/entry] + 1 || 1;
+            </code>
+          </div>
+          <p>This will allow for creation if not in list yet, or will add to current list. If already there the key's value will be overwritten, but the value will remain intact. Cool, huh?</p>
+    </section>
+    <section class="main-section" id="Nested_For_Loops">
+      <header>Nested For Loops</header>
+      <h2>Introduction</h2>
+      <p>I've included this topic as it confused my noggin to start off UNTIL I came across a brilliant explanation. Boiled down, think of how many days in a month as you are listing the months.<br> Or having a main list and each item you want to elaborate
+        on with a sublist.
+      </p>
+      <h3>Example:</h3>
+      <div class="example_code">
+        <code >
+          for(var month=1;month &lt;=12;month++){ <br>
+            <em>__</em>console.log("The Month is: " + month); <br>
+            <em>__</em>for(var day=1;day &lt;=31;day++){ <br>
+              <em>____</em>console.log("the day is::::::: " + day); <br>
+              <em>__</em>} <br> }
+        </code>
+      </div>
+
+      <h3>Example 2:</h3>
+      <div class="example_code">
+        <code >
+          var species = ["cat", "dog", "monkey"]; <br> var specificSpecies = [["lion", 'leopard', 'tabby'], ['wolf', 'hyena','poodle'], ['spider', 'mandrill', "marmoset"]]; <br>
+          <br>for (var i = 0; i &lt; species.length; i++){ <br>
+            <em>__</em>console.log("The family name of the species is : " + species[i]); <br>
+            <em>__</em>for (var j = 0; j &lt; specificSpecies.length; j++){ <br>
+              <em>_____</em>console.log("Examples of types of this species are: " + specificSpecies[i]); <br>
+              <em>__</em>}<br>
+              <em>__</em>console.log("end of both loops"); <br> }
+        </code>
+      </div>
+
+      <p>Have a play with these examples and I hope they help your understanding!</p>
+
+    </section>
+    <section class="main-section" id="Recursion">
+      <header>Recursion</header>
+      <h2>Introduction</h2>
+        <p>Recursion. Where do I start with recursion? Maybe a better question would be where do I end or oh god why, WHY?! Basically you call your
+        function again at the end of the very same function with updated info (params) until you've reached an end, say zero or an end of a list.</p>
+        <h3>Example:</h3>
+        <div class="example_code">
+          <code >
+            var arr = ["lamb","goat","dog","sheep"];<br>
+
+            <br>function animalSays(arr){
+             var savedArr = arr; <br>
+             var counter = 0; <br>
+             if (arr[counter] == "dog"){ <br>
+               <em>__</em>console.log("woof"); <br>
+             } else { <br>
+               <em>__</em>console.log("no such animal here"); <br>
+               <em>__</em>savedArr.shift(arr[counter]); <br>
+               <em>__</em>counter++; <br>
+               <em>__</em>animalSays(savedArr); <br>
+             <em>__</em>} <br>
+           }
+         </code>
+        </div>
+
+        <p>It's a nifty little technique to add to your skillset, after learning I do pop a few of them in my code here and there. The beauty is once you get the swing of them I can guarantee you'll find places to slot them in.</p>
+    </section>
+    <section class="main-section" id="Arguments">
+      <header>Arguments</header>
+      <h2>Introduction</h2>
+      <p>Helpful: 10/10. Fun: 10/10. When you aren't sure how many arguments you're going to get passed arguments can come in very handy.</p>
+      <h3>Example:</h3>
+      <div class="example_code">
+        <code >
+          function takingArgs(){ <br>
+            <em>__</em>for (var i = 0; i &lt; arguments.length; i++ ){ <br>
+              <em>____</em>console.log(arguments[i]); <br>
+            <em>__</em>} <br>
+          } <br>
+          takingArgs("fred", "1", 45324);
+        </code>
+      </div>
+
+    </section>
+    <section class="main-section" id="Tips">
+      <header>Tips</header>
+      <h3>A little extra:</h3>
+      <p>A few tips I would have appreciated when starting out.</p>
+      <ul id="tip_ul">
+        <li>You aren't going to know everything, learn what you can always.</li>
+        <li>Step away for a breather after completing something. Whether that be an entire project, learning a new topic or finishing off a tricky piece of code. A moment to unwind can improve your performance.</li>
+        <li>Algorithms, algorithms, algorithms! You'll be thankful you spent quite a lot of time here.</li>
+        <li>Priming: read articles and watch videos or anything related to what you'll be trying to study prior to actually attempting it. Your brain will be excited to start the task.</li>
+        <li>If you hate a certain topic or skill (for me it's Regex) it is a strong indicator you need to spend more time in this area (I really do and currently am. It's not so fun, but I know it will get better.)</li>
+      </ul>
+    </section>
+  </main>
+</body>
+
+</html>

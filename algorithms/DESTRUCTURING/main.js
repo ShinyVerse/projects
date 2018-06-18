@@ -46,7 +46,7 @@ const [a,, b] = [...arguments];
   console.log(a,b );
 }
 
-func1(1, 2, 3,4, 5, 6 );
+func1(1, 2, 3, 4, 5, 6 );
 
 random("he", "9AM", "the park");
 /////////////////////////////////////////////FCC:
