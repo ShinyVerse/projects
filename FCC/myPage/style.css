@@ -5,7 +5,7 @@ html {
   margin: 0;
   text-decoration: none;
   list-style: none;
-  background: #1f8fc7;
+  background: linear-gradient(to right, #70dbfb,white, white, white,#70dbfb);
 
 }
 body {
@@ -14,7 +14,7 @@ body {
   width: 90%;
   padding: 10px;
   margin: auto;
-  background: #e7e7e7;
+  background: #f1f1f1;
 }
 nav {
   width: 100%;
@@ -43,7 +43,16 @@ a {
   border-radius: 40%;
   margin: auto;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 500px) {
+
+  .projImg {
+    margin-left: 10%;
+    width: 80%;
+    height:250px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
     body {
         width:70%;
     }
@@ -89,7 +98,8 @@ a {
     margin: auto;
   }
   .projImg {
-    height:300px;
+    width: 45%;
+    height:250px;
   }
   .contactContainer{
     width: 60%;
@@ -98,6 +108,7 @@ a {
 }
 @media only screen and (min-width: 1200px) {
   .projImg {
-    height:400px;
+    width: 42%;
+    height:350px;
   }
 }
