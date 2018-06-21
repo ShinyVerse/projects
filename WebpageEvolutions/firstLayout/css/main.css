@@ -1,0 +1,451 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 5px;
+}
+.hidden {
+   visibility: hidden;
+   height: 10px;
+   opacity: 0;
+}
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 400;
+    background: linear-gradient(to right, #e3edf0,white, white, white,#e3edf0);
+}
+button.hamburger--collapse {
+  background-color: inherit;
+  border: none;
+  outline: none;
+}
+.right {
+  margin: 10px;
+  display: block;
+  float: right;
+  padding: 3px;
+}
+
+#navLine {
+  height: 3px;
+  width: calc(60%);
+  margin-top: -15px;
+  display: block;
+  margin-left: calc(20%);
+  background-color:  #cde5ec;
+  border-radius: 2px;
+  transition: opacity 1s ease-out;
+}
+
+.myNav {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1px;
+  transition: opacity 1.2s;
+}
+.navItem {
+  border-radius: 1px;
+  margin: auto;
+  width: 50%;
+  text-decoration: none;
+  background-color: inherit;
+  border-bottom: #cde5ec 3px solid;
+  color: #4f4f4f;
+  padding: 10px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.mainInfo {
+  font-size: 1.2em;
+  font-weight: 600;
+  color:#4f4f4f;
+  text-align: center;
+  padding: 10px;
+}
+
+
+#proPic {
+  height: 200px;
+  width:200px;
+  border-radius: 50%;
+}
+
+h2 {
+  text-align: center;
+}
+
+.projectsContainer {
+  display: block;
+}
+
+.projectsContainer p {
+  text-align: center;
+}
+
+.projectButton{
+  height: 100px;
+  width: 100px;
+}
+
+.projectButton {
+  margin-left: calc(50% - 50px);
+}
+
+
+/* CSS for buttons */
+
+
+.backToHome {
+  display: block;
+  background-image: url(../img/home.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+  z-index: 1000;
+  position: absolute;
+  top: 10px;
+  left:10px;
+}
+
+
+/* CSS for hamburger menu */
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible; }
+  .hamburger:hover {
+    opacity: 0.7; }
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative; }
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px; }
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
+  .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+  .hamburger-inner::before {
+    top: -10px; }
+  .hamburger-inner::after {
+    bottom: -10px; }
+
+/*
+   * 3DX
+   */
+.hamburger--3dx .hamburger-box {
+  perspective: 80px; }
+
+.hamburger--3dx .hamburger-inner {
+  transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1); }
+  .hamburger--3dx .hamburger-inner::before, .hamburger--3dx .hamburger-inner::after {
+    transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1); }
+
+.hamburger--3dx.is-active .hamburger-inner {
+  background-color: transparent;
+  transform: rotateY(180deg); }
+  .hamburger--3dx.is-active .hamburger-inner::before {
+    transform: translate3d(0, 10px, 0) rotate(45deg); }
+  .hamburger--3dx.is-active .hamburger-inner::after {
+    transform: translate3d(0, -10px, 0) rotate(-45deg); }
+
+/*
+   * Collapse
+   */
+.hamburger--collapse .hamburger-inner {
+  top: auto;
+  bottom: 0;
+  transition-duration: 0.13s;
+  transition-delay: 0.13s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  .hamburger--collapse .hamburger-inner::after {
+    top: -20px;
+    transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear; }
+  .hamburger--collapse .hamburger-inner::before {
+    transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+.hamburger--collapse.is-active .hamburger-inner {
+  transform: translate3d(0, -10px, 0) rotate(-45deg);
+  transition-delay: 0.22s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .hamburger--collapse.is-active .hamburger-inner::after {
+    top: 0;
+    opacity: 0;
+    transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear; }
+  .hamburger--collapse.is-active .hamburger-inner::before {
+    top: 0;
+    transform: rotate(-90deg);
+    transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+/*
+   * Slider
+   */
+.hamburger--slider .hamburger-inner {
+  top: 2px; }
+  .hamburger--slider .hamburger-inner::before {
+    top: 10px;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.15s; }
+  .hamburger--slider .hamburger-inner::after {
+    top: 20px; }
+
+.hamburger--slider.is-active .hamburger-inner {
+  transform: translate3d(0, 10px, 0) rotate(45deg); }
+  .hamburger--slider.is-active .hamburger-inner::before {
+    transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+    opacity: 0; }
+  .hamburger--slider.is-active .hamburger-inner::after {
+    transform: translate3d(0, -20px, 0) rotate(-90deg); }
+
+/* CSS for calculator */
+#calculatorCase {
+  margin: auto;
+  width: 200px;
+  height: 300px;
+  border: #cde5ec 4px solid;
+  background: linear-gradient(to right,  #cde5ec,  white, #cde5ec);
+  border-radius: 15px 15px 5px 5px;
+
+}
+
+#calculatorCase button {
+  height: 40px;
+  width: 40px;
+  margin: 2.5px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.calcScreen {
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  font-size: 1em;
+  display: block;
+  margin: auto;
+  margin-top:0px;
+  margin-bottom: 20px;
+  height: 60px;
+  width: 180px;
+  position: relative;
+}
+#calcScreen1{
+  font-size: 1.6em;
+  padding-top: 12px;
+}
+#calcScreen2{
+position: absolute;
+background-color: #f4f4f4;
+text-align: right;
+font-size: 1em;
+top: 10px;
+width: 97.5%;
+height: 21px;
+padding: 2px;
+border-radius: 2px 2px 5px 5px;
+}
+
+.symbolError {
+  border: tomato 1.5px solid;
+}
+
+/* CSS for cakeSelector */
+
+html,body
+{
+    overflow-x: hidden;
+}
+div.item {
+  padding: 0;
+}
+img.item {
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  padding-left: calc(20%);
+}
+
+#cartSection{
+  margin: 15px;
+  margin-left: calc(80% - 7.5px);
+  height: 150px;
+  width:200px;
+}
+
+#cart{
+  height: 50px;
+  width: 50px;
+}
+#cartBubble{
+  background-color: #4a4a4a;
+  color: white;
+  height: 38px;
+  width:50px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 1.4em;
+  padding-top: 12px;
+  margin-left: 4px;
+}
+
+#shoppingSection{
+  padding: 10px;
+  margin:auto;
+  width: calc(82%);
+}
+
+.itemBubble {
+  height: 30px;
+  width:25px;
+  background-color: #392780;
+  color: white;
+  margin: 20px 20px 60px;
+  margin-left: calc(50% - 20.5px);
+  font-size: 1.2em;
+  padding-top: 10px;
+  padding-left: 15px;
+  border-radius: 10px;
+}
+
+button {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+
+.plus{
+  float: right;
+  background-color: #61e472;
+  margin: 5px;
+}
+.minus {
+  float: left;
+  margin: 5px;
+  background-color: #c85252;
+}
+
+
+#addToCart {
+  width: 100px;
+  height:50px;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: #bef9ff;
+  font-size: 1.2em;
+  margin: 0 0 20px;
+  margin-left: calc(50% - 50px);
+
+}
+/* Media Queries for cakeSelector */
+
+@media screen and (min-width: 500px){
+  #itemSelection{
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  }
+
+  .item {
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    background: white;
+    border: #e3edf0 2px solid;
+  }
+img.item {
+    padding-left: calc(11%);
+    border: none;
+}
+.itemBubble {
+  margin-left: calc(35%);
+  padding-left: 20px;
+  padding-right: 10px;
+}
+.plus{
+  margin-left: 20px;
+}
+
+}
+
+
+/* Media Queries for main */
+
+@media screen and (min-width: 500px) {
+  #menuButton {
+    visibility: hidden;
+  }
+
+  .myNav {
+    visibility: visible;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    opacity: 1;
+  }
+
+  .navItem {
+    border-bottom: none;
+    background-color: inherit;
+    width: 75px;
+    padding-bottom: 15px;
+    transition: border 0.3s;
+  }
+
+  .navItem:hover {
+    border-top: 3px solid #cde5ec;
+  }
+
+  .projectsContainer{
+    width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
