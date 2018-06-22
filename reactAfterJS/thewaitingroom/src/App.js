@@ -11,15 +11,21 @@ class App extends Component {
 
     this.state = {
       users: [
-        {id: idGenerator() ,name: "Hannah Gates" , waitingFor: "CT"},
-        { id:idGenerator(),name: "Robert Bush" , waitingFor: "Fluids"},
-        {id: idGenerator(),name: "Mary Peasmon" , waitingFor: "Cardio"},
+
       ],
       newName: "",
-      newDest: ""
+      newDest: "",
+      currentTime: new Date().toLocaleTimeString([],{day: 'numeric', month: 'long', year: 'numeric',hour: '2-digit', minute:'2-digit'})
     }
   }
 
+  componentDidMount(){
+     setInterval(function(){
+         this.setState({
+             currentTime: new Date().toLocaleTimeString([],{day: 'numeric', month: 'long', year: 'numeric',hour: '2-digit', minute:'2-digit'})
+         })
+     }.bind(this), 30000);
+ }
 
 deleteUser = (index, e) =>{
   const users = Object.assign([], this.state.users);
@@ -42,12 +48,21 @@ newEntryComplete = () => {
   const newUser = {id:idGenerator(), name: this.state.newName, waitingFor: this.state.newDest}
   users.push(newUser);
   this.setState({users:users, newName: "", newDest: ""});
-
 }
+timeNow() {
+  var currentdate = new Date();
+  var datetime = currentdate.getDate() + "/"
+                  + (currentdate.getMonth()+1)  + "/"
+                  + currentdate.getFullYear()
+                  return datetime;
+}
+
 
   render() {
     return (
       <div className="App">
+        <h1> {this.state.currentTime} </h1>
+        <h1>Patient List:</h1>
         <ul className="patient-ul">
           {this.state.users.map((user) =>
               <User
