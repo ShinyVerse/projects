@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.patient-ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+  list-style: none;
+  border: black 2px solid;
+  margin: auto;
+  padding: 50px;
+}
+
+.patient-li {
+  margin: 10px;
+  width: 270px;
+  height: 200px;
+  border: black 2px solid;
+  padding: 10px;
+  word-wrap: break-word;
+}
+.green {
+  background-color: #7bee9b;
+}
+
+.adduser{
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  width:270px;
+  height: 200px;
+  border: black solid 2px;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.adduser input {
+  width: 90%;
+  overflow:hidden;
+}
+.adduser button{
+  align-self: center;
+}
