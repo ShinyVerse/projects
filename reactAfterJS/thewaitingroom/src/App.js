@@ -24,10 +24,10 @@ class App extends Component {
         const users = Object.assign([], this.state.users);
         users.map(user => {
           user.timeCount++;
-          if (user.timeCount > 2){
+          if (user.timeCount > 1){
             user.styleC = {background: "#d68d1f"}
           }
-          if (user.timeCount > 4){
+          if (user.timeCount > 3){
             user.styleC = {background: "#d6301f"}
           }
         });

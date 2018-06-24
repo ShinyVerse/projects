@@ -25,7 +25,7 @@ body {
 }
 .green {
   background-color: #7bee9b;
-  
+
 }
 
 .adduser{
@@ -38,10 +38,27 @@ body {
   justify-content: space-around;
   align-items: flex-start;
 }
+
 .adduser input {
   width: 90%;
   overflow:hidden;
 }
 .adduser button{
   align-self: center;
+}
+
+#adduser-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#adduser-form select {
+  margin-top: -15px;
+  padding: 5px;
+}
+
+#dept-selection {
+  width: 90%;
 }
