@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
 import Selector from './Components/OptionDropDown/Selector';
+import Flag from './Components/Flag/flag'
 
 
 const API_COUNTRIES = "http://country.io/names.json";
-
+const API_FLAGS = "http://www.countryflags.io/";
+const API_FLAGS2 = "/shiny/64.png";
+//interpolation
 // async function countryList(){
 //   const countries = await fetch(API_COUNTRIES);
 //   let json1 = await countries.json();
@@ -19,12 +22,16 @@ class App extends Component {
     super();
     this.state = {
       countries: [],
+      currFlag : "blank"
     };
   }
 
   onChangeCountrySelect = (event) =>{
     console.log(event.target.value);
-
+    let lcCountry =  event.target.value.toLowerCase();
+    this.setState({
+      currFlag : API_FLAGS+lcCountry+API_FLAGS2
+    })
   }
 
   componentDidMount(){
@@ -54,7 +61,8 @@ class App extends Component {
 
         <Selector
           onChangeSelect={this.onChangeCountrySelect.bind(this)}
-          countries={this.state.countries}/>
+          countries={this.state.countries}/><br/>
+          <Flag flagImg={this.state.currFlag} />
       </div>
     );
   }
