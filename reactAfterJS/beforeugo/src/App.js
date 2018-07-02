@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import ListOption from './CountryDropDown/Dropdown'
+import Selector from './Components/OptionDropDown/Selector';
+
+
 const API_COUNTRIES = "http://country.io/names.json";
 
 // async function countryList(){
@@ -17,7 +19,6 @@ class App extends Component {
     super();
     this.state = {
       countries: [],
-      countryAbr: []
     };
   }
 
@@ -47,20 +48,13 @@ class App extends Component {
   }
 //!!FSAFASFSDFGDSGDSAGAFG!¬"!¬£!"£!"£"!£
   render() {
-      console.log(this.state.countries);
-      //   console.log(this.state.countryAbr);
+      // console.log(this.state.countries);
     return (
       <div className="App">
-        <select onChange={this.onChangeCountrySelect.bind(this)}>
-          {this.state.countries.sort().map((place) => {
-            return <ListOption
-               country={place[0]}
-               key={place[1]}
-               code={place[1]}
-             />
-          })}
-        </select>
 
+        <Selector
+          onChangeSelect={this.onChangeCountrySelect.bind(this)}
+          countries={this.state.countries}/>
       </div>
     );
   }
