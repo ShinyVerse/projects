@@ -41,6 +41,10 @@ class App extends Component {
      }.bind(this), 5000);
  }
 
+ resetUser = () => {
+   this.setState({ newName: "", newDest: ""});
+ }
+
 deleteUser = (index, e) =>{
   const users = Object.assign([], this.state.users);
   users.splice(index, 1);
@@ -61,14 +65,19 @@ newEntryComplete = () => {
   let regex_letters = /^[a-zA-Z\s]*$/;
   let regex_empty = /.*\S.*/;
 
-  if (regex_letters.test(this.state.newName) && regex_empty.test(this.state.newName)){
+  if (regex_letters.test(this.state.newName) && regex_empty.test(this.state.newName) && this.state.newDest !== ""){
   const users = Object.assign([], this.state.users);
   const newUser = {id:idGenerator(), name: this.state.newName, waitingFor: this.state.newDest, timeCount: 0, styleC: { background: "#7bee9b"}}
   users.push(newUser);
-  this.setState({users:users, newName: "", newDest: "", patient_error: ""});
+  this.resetUser();
+  this.setState({users:users, patient_error: ""});
+  }
+  if (this.state.newDest !== "" || this.state.newDest !== "none" && regex_letters.test(this.state.newName) ){
+    this.setState({patient_error: "Patient needs a department"});
   }
   else {
-    this.setState({ newName: "", newDest: "", patient_error: "Names must contain only letters"});
+    this.resetUser();
+    this.setState({patient_error: "Names must contain only letters"});
   }
 
 }
