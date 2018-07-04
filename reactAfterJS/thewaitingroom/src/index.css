@@ -24,7 +24,7 @@ html {
   height: 200px;
   border: #2f2f2f 1px solid;
   border-radius: 20px;
-  box-shadow: 3px 3px #b1afaf;
+  box-shadow: 3px 5px 10px #b1afaf ;
   padding: 10px;
   word-wrap: break-word;
 }
@@ -83,6 +83,7 @@ html {
   margin-right: 5px;
   margin-bottom: 5px;
   outline: none;
+  box-shadow: 0 8px 6px -6px black;
 }
 
 .card__btn {

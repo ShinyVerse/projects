@@ -72,7 +72,10 @@ newEntryComplete = () => {
   this.resetUser();
   this.setState({users:users, patient_error: ""});
   }
-  if (this.state.newDest !== "" || this.state.newDest !== "none" && regex_letters.test(this.state.newName) ){
+  if (this.state.newDest !== "" || this.state.newDest !== "none"){
+    if (regex_empty.test(this.state.newName)){
+        this.setState({patient_error: "Patient name must be present"});
+    }
     this.setState({patient_error: "Patient needs a department"});
   }
   else {
