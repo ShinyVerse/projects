@@ -4,6 +4,8 @@ import User from './components/user';
 import AddUser from './components/adduser';
 import idGenerator from 'react-id-generator';
 
+
+
 class App extends Component {
   constructor(props){
     super(props);
@@ -14,9 +16,11 @@ class App extends Component {
       ],
       newName: "",
       newDest: "",
+      patient_error: "",
       currentTime: new Date().toLocaleTimeString([],{day: 'numeric', month: 'long', year: 'numeric',hour: '2-digit', minute:'2-digit'})
     }
   }
+
 
   componentDidMount(){
      setInterval(function(){
@@ -54,10 +58,19 @@ onChangeDestEvent = (event) => {
   });
 }
 newEntryComplete = () => {
+  let regex_letters = /^[a-zA-Z\s]*$/;
+  let regex_empty = /.*\S.*/;
+
+  if (regex_letters.test(this.state.newName) && regex_empty.test(this.state.newName)){
   const users = Object.assign([], this.state.users);
   const newUser = {id:idGenerator(), name: this.state.newName, waitingFor: this.state.newDest, timeCount: 0, styleC: { background: "#7bee9b"}}
   users.push(newUser);
-  this.setState({users:users, newName: "", newDest: ""});
+  this.setState({users:users, newName: "", newDest: "", patient_error: ""});
+  }
+  else {
+    this.setState({ newName: "", newDest: "", patient_error: "Names must contain only letters"});
+  }
+
 }
 timeNow() {
   var currentdate = new Date();
@@ -89,7 +102,7 @@ patientUpdatedEvent(id, e){
       <div className="App">
         <h1> {this.state.currentTime} </h1>
         <h1>Patient List:</h1>
-        <ul className="patient-ul">
+        <ul className="patient__list">
           {this.state.users.map((user) =>
               <User
                 key={user.id}
@@ -105,6 +118,7 @@ patientUpdatedEvent(id, e){
         <AddUser
           name={this.state.newName}
           dest={this.state.newDest}
+          error_message={this.state.patient_error}
           updatedEvent={this.patientUpdatedEvent.bind(this)}
           changeNameEvent={this.onChangeNameEvent.bind(this)}
           changeDestEvent={this.onChangeDestEvent.bind(this)}

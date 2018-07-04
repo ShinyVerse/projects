@@ -3,14 +3,14 @@ import React from 'react';
 const adduser = (props) => {
   console.log(props.name);
   return (
-    <div className="adduser">
-      <form id="adduser-form">
-        <span className="input-list-tag form-item"  >Patient's name:<input onChange={props.changeNameEvent} value={props.name}></input>
+    <div className="patient--new">
+      <form className="patient__form">
+        <span>Patient's name:<input onChange={props.changeNameEvent} value={props.name} className="patient__input--name"></input>
       </span><br/>
         {/* <span className="input-list-tag">Waiting for:<input onChange={props.changeDestEvent} value={props.dest} ></input></span> */}
-        <span className="input-list-tag form-item">Waiting for:</span><br/>
-        <select  onChange={props.changeDestEvent} className="form-item" id="dept-selection">
-          <option value="none" >--------- Please choose an option -------</option>
+        <span>Waiting for:</span><br/>
+        <select  onChange={props.changeDestEvent} className="department--select">
+          <option value="none" >------ Please choose an option ----</option>
           <option value="Cardiology">Cardiology</option>
           <option value="Diagnostic Imaging">Diagnostic Imaging</option>
           <option value="ENT">ENT</option>
@@ -21,7 +21,8 @@ const adduser = (props) => {
         </select>
 
       </form>
-      <button onClick={props.buttonAction}>Add Patient</button>
+      <button onClick={props.buttonAction} className="btn patient__btn">Add Patient</button>
+      <p className="error--font">{props.error_message}</p>
     </div>
   )
 }
