@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: sans-serif;
+    width: 100vw;
+}
+html {
+  margin: 0;
+
+}
+.patient__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+  list-style: none;
+  margin: auto;
+  padding: 30px;
+}
+
+.patient__card {
+  margin: 10px;
+  width: 250px;
+  height: 200px;
+  border: #2f2f2f 1px solid;
+  border-radius: 20px;
+  box-shadow: 3px 5px 10px #b1afaf ;
+  padding: 10px;
+  word-wrap: break-word;
+}
+.green {
+  background-color: #7bee9b;
+}
+
+
+
+.patient--new{
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  width:250px;
+  height: 200px;
+  border: black solid 1px;
+  border-radius: 5px;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.patient__input--name {
+  width: 90%;
+  height: 20px;
+  border-bottom: #2f2f2f solid 1px;
+  overflow:hidden;
+  outline: none;
+}
+.patient__btn{
+  align-self: center;
+  background: #0b8776;
+}
+
+.patient__form{
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.department--select {
+  width: 90%;
+  margin-top: -15px;
+  padding: 5px;
+  outline: none;
+}
+.btn {
+  border-radius: 10px;
+  width: 120px;
+  height: 30px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: white;
+  border: none;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  outline: none;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.card__btn {
+  position: relative;
+  top: 40px;
+  left: 5px;
+}
+
+.complete {
+  background: #185420;
+}
+
+.refresh {
+  background: #006590;
+}
+
+.error--font {
+  color: red;
+  margin: auto;
+}
