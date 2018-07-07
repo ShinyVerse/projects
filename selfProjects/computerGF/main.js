@@ -1,11 +1,8 @@
 var deviceBtns = document.getElementsByClassName("btn--interaction");
-
 var deviceMessage = document.querySelector('.board__message');
-
 const btnArray = ["ADMIRE ME!", "MAKE ME LAUGH!", "IMPRESS ME!", "LOVE ME!", "CONSOLE ME!", "ADVISE ME!"];
 
-
-(function assignButtonTask(){
+(function assignButtonAction(){
   for (var i=0; i < deviceBtns.length; i++) {
     deviceBtns[i].onclick = function(){
         findBtnIndex(btnArray, this.innerHTML);
