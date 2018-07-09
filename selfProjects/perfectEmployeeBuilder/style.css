@@ -1,0 +1,62 @@
+body {
+  width: 100%;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* block **********************************/
+
+.container {
+  margin: auto;
+}
+
+.icon {
+  width: 125px;
+  height: 220px;
+  display: inline-block;
+  padding: 12.5px;
+  margin: 10px;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 15px 0 rgba(0,0,0,0.19);
+  border-radius: 10px 10px 5px 5px;
+}
+
+.total {
+  display: inline-block;
+  margin: 0px;
+}
+
+.employee {
+  margin-bottom: 60px
+}
+
+/* block__el ********************************/
+
+.icon__image {
+  border-radius: 50%;
+  width: 100%;
+  height: 100px;
+}
+
+.icon__description {
+  width: 100%;
+  height: 30px;
+  margin: auto;
+  text-align: center;
+}
+
+.btn__add {
+  margin: 5px 5%;
+  width: 90%;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 1em;
+  outline: none;
+  cursor: pointer;
+  background: #16bb8a;
+  box-shadow: 0 4px #14785a;
+  border: none;
+}
+
+.btn__add:active {
+  box-shadow: 0 2px #14785a;
+  transform: translateY(4px);
+}

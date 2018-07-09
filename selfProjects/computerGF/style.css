@@ -11,16 +11,12 @@ body {
   background:url('./img/bg.jpg');
   background-size: contain;
 }
+  /* block******************/
 .device {
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-family: 'PT Mono', monospace;
-}
-.device__heading {
-    font-size: 1.5em;
-  text-align: center;
-  text-shadow: 0 0 3px #06daff, 0 0 5px #06daff;
 }
 
 .board {
@@ -31,6 +27,13 @@ body {
   border: #06daff solid 5px;
   margin: auto;
   order: -1;
+}
+  /* block__el ******************/
+
+.device__heading {
+    font-size: 1.5em;
+  text-align: center;
+  text-shadow: 0 0 3px #06daff, 0 0 5px #06daff;
 }
 
 .board__message {
@@ -44,6 +47,8 @@ body {
 .btn__panel {
   width: 100%;
 }
+
+  /* block--mod ******************/
 
 .btn--interaction {
   display: block;
@@ -64,21 +69,24 @@ body {
     justify-content: center;
       background-size: cover;
   }
+  /* block ******************/
 
   .device {
     display: inline-block;
-  }
-
-  .device__heading {
-    font-size: 3em;
   }
 
   .board{
     width: 540px;
     height: 350px;
   }
-   .board__message {
 
+    /* block__el ******************/
+
+  .device__heading {
+    font-size: 3em;
+  }
+
+   .board__message {
      padding: 50px;
      padding-top: 100px;
      font-size: 1.7em;
@@ -88,6 +96,8 @@ body {
     flex-direction: row;
     justify-content: space-around;
   }
+
+  /* block--mod ******************/
   .btn--interaction {
     display: inline-block;
     margin: 10px 10px 10px 15px;
