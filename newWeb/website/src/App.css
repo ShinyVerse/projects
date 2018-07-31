@@ -2,10 +2,13 @@ body {
   font-family: 'Yantramanav', sans-serif;
   margin: none;
   padding: none;
+  background-image: url('https://github.com/ShinyVerse/projects/blob/master/codepenImg/DS/myPage/kb_bg.jpg?raw=true');
+  background-size: contain;
 }
 .skill--title {
+  color: white;
   text-align: center;
-  border-bottom: 2px solid rgb(32, 109, 226);
+  border-bottom: 2px solid rgba(1, 255, 232);
   width: 100px;
   margin: auto;
 }
@@ -27,12 +30,13 @@ body {
 }
 
 .project__box {
+  background: white;
   width: 300px;
   height: 220px;
   margin: 15px auto;
   list-style: none;
   padding: 10px;
-  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 15px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 4px 10px 0 rgba(250, 250, 250, 0.25), 0 6px 15px 0 rgba(1, 255, 232, 0.25);
 }
 
 .project__container {
