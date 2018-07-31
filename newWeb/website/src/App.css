@@ -1,0 +1,40 @@
+body {
+  font-family: 'Yantramanav', sans-serif;
+  margin: none;
+  padding: none;
+}
+.skill--title {
+  text-align: center;
+  border-bottom: 2px solid rgb(32, 109, 226);
+  width: 100px;
+  margin: auto;
+}
+.skill--language {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+}
+.skill__container {
+  background: black;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.project--img {
+  width: 300px;
+  height: 200px;
+}
+
+.project__box {
+  width: 300px;
+  height: 220px;
+  margin: 15px auto;
+  list-style: none;
+  padding: 10px;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 15px 0 rgba(0,0,0,0.19);
+}
+
+.project__container {
+  padding: 0;
+}

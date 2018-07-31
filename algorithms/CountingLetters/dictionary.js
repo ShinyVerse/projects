@@ -27,5 +27,5 @@ var shoppingList = {
 };
 
 function getThis(item){
-  shoppingList[item] = shoppingList[item] + 1;
+  shoppingList[item] = shoppingList[item] + 1 || 1;
 }

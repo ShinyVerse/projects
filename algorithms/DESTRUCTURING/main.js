@@ -9,7 +9,7 @@ function random(...params){
 }
 
 // Obj destructuring
-r profileData = {name: "rachel", age:45, nat: "British", loc: "London"};
+var profileData = {name: "rachel", age:45, nat: "British", loc: "London"};
 var data2 = {name: "bob", age:5, nat: "Scottish", loc: "Miami"};
 
 const profile = (profileData) => {
