@@ -24,7 +24,7 @@ class SkillList extends Component {
   render() {
     return(
       <Fragment>
-      <h1 className="skill--title">SkillSet</h1>
+      <h1 className="main--title">SkillSet</h1>
       <ul className="skill__container">
         {this.state.skills.map((skill) =>
                   <Skill

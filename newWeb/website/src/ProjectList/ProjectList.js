@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Project from './Project';
 
 class ProjectList extends Component {
@@ -20,18 +20,21 @@ class ProjectList extends Component {
 
   render() {
     return(
-    <ul className="project__container" >
-      {this.state.projects.map((item) =>
-                <Project
-                  key={item.title}
-                  title={item.title}
-                  img={item.image}
-                  alt={item.title}
-                  >
-                </Project>
-              )
-            }
-    </ul>
+      <Fragment>
+        <h1 className="main--title">Portfolio</h1>
+        <ul className="project__container" >
+          {this.state.projects.map((item) =>
+                    <Project
+                      key={item.title}
+                      title={item.title}
+                      img={item.image}
+                      alt={item.title}
+                      >
+                    </Project>
+                  )
+                }
+        </ul>
+    </Fragment>
     )
   }
 }
