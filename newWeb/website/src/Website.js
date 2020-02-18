@@ -10,7 +10,7 @@ class Website extends Component {
       <div className="App">
         <Bio />
         <SkillList />
-        <ProjectList />
+        <p>Sorry, going through maintenance atm! Check back later!</p>
       </div>
     );
   }
